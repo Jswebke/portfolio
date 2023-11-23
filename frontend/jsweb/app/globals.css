@@ -1,27 +1,63 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*{
+  padding:0;
+  margin: 0;
+  /* border: 0.1px solid red; */
+}
+/* -----------------GENERAL PAGE STYLES-------------- */
+:root{
+  --padding:10px;
+  --fontsize:0.8750em;
+}
+body{
+  background-color: #F1F7F5; 
+}
+/* -----------------NAVBAR DESIGN----------- */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content:center;
+  margin: auto;
+  width: 90vw;
+  height: 70px;
+  padding: var(--padding);
+
+}
+.menu{
+  display: block;
+  float:right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #B5BEB9;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding: 4px
+
+}
+.dashes{
+  margin: auto;
+  width: 24.08px;
+  height: 17.668px;
+  flex-shrink: 0;
+}
+.letsTalk{
+  color: #000;
+text-align: center;
+font-family: Lora;
+font-size: var(--fontsize);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.right-group{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 22%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}

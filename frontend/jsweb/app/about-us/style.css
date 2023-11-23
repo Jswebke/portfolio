@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* about us section */
+.heroText-wrapper{
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    width:70% ;
+}
+.heroText-wrapper h2{
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Lora;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    
+}
+
+/* Our company profile */
+.CTA-btt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 25px;
+    
+}
+.CTA-btt button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: none;
+    background-color: #F1F7F5;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-family: Lora;
+    font-size: 0.79563rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.link{
+    color: #000;
+    text-decoration: none;
+
+}
+.two-men-image{
+    width: 100%;
+    aspect-ratio: auto;
+    position: relative;
+    top:50px;
+}
