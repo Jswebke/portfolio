@@ -20,8 +20,9 @@ module.exports = {
 
       },
       fontFamily: {
-        lato: ['var(--font-lato)'],
-        quattrocento: ['var(--font-quattrocento)'] 
+        lora: 'var(--font-lora)',
+        quattrocento: 'var(--font-quattrocento)',
+        inter: 'var(--font-inter)',
       }
     },
   },
