@@ -3,9 +3,13 @@ import './style.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import image1 from '../Images/Image.png'
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 const aboutUs = () => {
   return (
     <>
+    <NavBar/>
+
     {/* --------------------hero section--------------------- */}
     <div className='heroText-wrapper'>
      <h2>We believe in technology's<br/>transformative power, driving digital<br/>growth for our clients.</h2>
@@ -35,6 +39,7 @@ const aboutUs = () => {
         
       </div>
     </div>
+    <Footer/>
     </>
     )
 }
