@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* ------------about us section-------------------------- */
+.heroText-wrapper{
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    width:70% ;
+}
+.heroText-wrapper h2{
+    color: #000;
+    text-align: center;
+    margin-top: 25px;
+    font-family: Lora;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    
+}
+
+/* Our company profile */
+.CTA-btt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 45px;
+    
+}
+.CTA-btt button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0.8px solid black;
+    padding: 10px 14px;
+    border-radius: 5px;
+    color: #000;
+    background-color: none;
+    text-decoration: none;
+    text-align: center;
+    font-family: Lora;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.link{
+    color: black;
+    text-decoration: none;
+
+
+}
+.two-men-image{
+    width: 100%;
+    height: 60vh;
+    aspect-ratio: auto;
+    position: relative;
+    top:50px;
+}
+/* ------------------our story section------------------- */
+
+.ourStory-wrapper{
+    background-color: #B5D2C1;  
+    display: flex;
+    flex-direction: row;
+    top: 30px;
+    position: relative;
+
+    
+}
+.right-wrapper{
+    position: relative;
+    width: 50%;
+
+}
+.right-wrapper .title{
+    margin-top: 100px;
+    margin-left: 146px;
+    display: flex;
+    flex-direction: column;
+}
+.title hr{
+    width: 155px;
+    height: 1.5px;
+    position: relative;
+    margin-top: 20px;
+    background-color: #000;
+    align-self: safe;
+
+}
+.right-wrapper h2{
+    color: #000;
+    font-family: Lora;
+    font-size: 101.75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+
+    
+}
+.paragraphs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px ;
+    margin-left: 20px;
+
+}
+.right-wrapper p{
+    color: #000;
+    /* Paragraph */
+    font-family: calibri;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: start;
+    margin-top: 40px;
+    margin-left: 20px;
+}
