@@ -72,23 +72,25 @@
     flex-direction: row;
     top: 30px;
     position: relative;
+    padding: 120px;
+    margin-bottom: 50px;
 
-    
+/* ------------------------right wrapper-------------------   */
 }
 .right-wrapper{
     position: relative;
     width: 50%;
+    margin-right: 20px;
 
 }
 .right-wrapper .title{
-    margin-top: 100px;
-    margin-left: 146px;
+
     display: flex;
     flex-direction: column;
 }
 .title hr{
     width: 155px;
-    height: 1.5px;
+    height: 2.8px;
     position: relative;
     margin-top: 20px;
     background-color: #000;
@@ -110,19 +112,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:20px ;
+    margin-top:15px ;
     margin-left: 20px;
 
 }
+.paragraphs p:nth-child(2){
+    margin-bottom: 70px;
+}
 .right-wrapper p{
     color: #000;
-    /* Paragraph */
     font-family: calibri;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: start;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 20px;
+}
+
+/* -------------left wrapper----------------- */
+.left-wrapper{
+    position: relative;
+    width: 50%;
+    margin-left: 20px;
+
+}
+.left-wrapper .jsweblogo{
+    position: relative;
+    top: 100px;
+
+}
+.left-wrapper p{
+    position: relative;
+    top:110px
 }

@@ -5,10 +5,13 @@ import Image from 'next/image'
 import image1 from '../Images/Image.png'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import DarkNavBar from '../components/DarkNavBar'
+import arrow from '@/public/arrow-right-dark.svg'
+import JsWebLogo from '@/public/Logo-removebg 1.png'
 const aboutUs = () => {
   return (
     <>
-    <NavBar/>
+    <DarkNavBar/>
 
     {/* --------------------hero section--------------------- */}
     <div className='heroText-wrapper'>
@@ -16,12 +19,13 @@ const aboutUs = () => {
      <div className='CTA-btt'>
         <button>
           <Link href={""} className='link'>OUR COMPANY PROFILE</Link>
-          < Image className='' src={'/random.svg'} width={0} height={0}/>
+          < Image className='' src={arrow} width={0} height={0}/>
         </button>
 
      </div>
     </div>
     < Image className='two-men-image' src={image1} width={0} height={0}/>
+
     {/* ------------------------our story section--------------- */}
     <div className='ourStory-wrapper'>
       <div className='right-wrapper'>
@@ -36,7 +40,13 @@ const aboutUs = () => {
         </div>
       </div>
       <div className='left-wrapper'>
-        
+        <Image 
+          src={JsWebLogo}
+          width={500}
+          height={450}
+          className='jsweblogo'
+        />
+        <p>J's Web drives traffic to your site through a comprehensive approach, utilizing Social Media Marketing (SMM), Omni-channeling, and effective SEO. We optimize your online presence for visibility, making it easy for potential customers to discover and engage with your website.</p>
       </div>
     </div>
     <Footer/>
