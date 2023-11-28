@@ -6,7 +6,7 @@ import React from 'react'
 function NavBar({setShow}) {
     
   return (
-    <div className='w-full py-4 absolute flex flex-row justify-between px-16 items-center text-white text-sm'>
+    <nav className='w-full py-4 absolute flex flex-row justify-between px-16 items-center text-white text-sm'>
     <Link href={''} className='px-2'>
         <button>
             <Image
@@ -34,7 +34,7 @@ function NavBar({setShow}) {
             />
         </button>
     </div>
-</div>
+</nav>
   )
 }
 

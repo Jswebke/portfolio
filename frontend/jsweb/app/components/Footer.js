@@ -4,7 +4,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className='bg-alt-bg px-32 flex flex-col py-28 space-y-6 justify-center'>
+    <footer className='bg-alt-bg xl:px-32 sm:px-16 px-6 flex flex-col py-28 space-y-6 justify-center'>
         <p>Like what you see?</p>
         <Link href={''}>
           <button className='flex flex-row space-x-3 items-center'>
@@ -18,7 +18,8 @@ function Footer() {
                   />
           </button>
         </Link>
-        <div className='flex flex-row items-center justify-between pt-4'>
+        <div className='flex flex-col pt-4 items-start space-y-4
+        md:flex-row md:items-center md:justify-between md:space-y-0 '>
           <div className="flex flex-row items-center justify-start space-x-4">
             <div className="flex flex-row items-center justify-center text-sm space-x-2">
               <Image 
