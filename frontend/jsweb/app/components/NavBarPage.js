@@ -1,40 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import NavBar from './NavBar'
 
-function NavBarPage({setShow}) {
+function NavBarPage({show, setShow}) {
   return (
-    <main className='flex flex-col bg-alt-bg w-screen h-screen justify-between pb-32'>
-    <nav className='w-full py-4 flex flex-row justify-between px-16 items-center text-alt-fg text-sm'>
-      <Link href={''} className='px-2'>
-          <button>
-              <Image
-                  src={"/dark-logo.svg"}
-                  alt={'logo'}
-                  width={80}
-                  height={64}
-                  className='aspect-auto'
-              />
-          </button>
-      </Link>
-      <div className="flex flex-row items-center space-x-12">
-          <Link href={''}>
-              <button>
-                  <p>LET'S TALK</p>
-              </button>
-          </Link>
-          <button onClick={e => setShow(true)}>
-              <Image
-                  src={'/dark-menu.svg'}
-                  alt='menu'
-                  width={32}
-                  height={40}
-                  className='aspect-auto'
-              />
-          </button>
-      </div>
-    </nav>
-    <div className='flex flex-row items-start justify-center
+    <main className='flex flex-col bg-alt-bg w-screen h-screen text-white justify-between pb-32'>
+    <NavBar setShow={setShow} show={show} />
+    <div className='flex flex-row items-start justify-center pt-36
     md:pl-48 md:justify-normal'>
       <i className='font-quattrocento text-2xl -rotate-90'>MENU</i>
       <div className='flex flex-col font-lora text-6xl space-y-8'>

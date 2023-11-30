@@ -14,9 +14,10 @@ module.exports = {
       },
       colors: {
         'main-bg': '#F1F7F5',
-        'alt-bg': '#B5D2C1',
+        'alt-bg': '#000000',
         'main-fg': '#000000',
-        'alt-fg': '#0A2718',
+        'alt-fg': '#B5D2C1',
+        'dark-asset': '#B5D2C1'
 
       },
       fontFamily: {

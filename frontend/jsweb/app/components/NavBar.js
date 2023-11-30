@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-function NavBar({setShow}) {
+function NavBar({show, setShow}) {
     
   return (
-    <nav className='w-full py-4 absolute flex flex-row justify-between px-16 items-center text-white text-sm'>
+    <nav className='w-full py-4 z-50 absolute flex flex-row justify-between px-16 items-center text-white text-sm'>
     <Link href={''} className='px-2'>
         <button>
             <Image
@@ -24,7 +24,7 @@ function NavBar({setShow}) {
                 <p>LET'S TALK</p>
             </button>
         </Link>
-        <button onClick={e => setShow(false)}>
+        <button onClick={e => setShow(!show)}>
             <Image
                 src={'/menu.svg'}
                 alt='menu'

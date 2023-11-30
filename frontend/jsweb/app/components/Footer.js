@@ -4,13 +4,13 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className='bg-alt-bg xl:px-32 sm:px-16 px-6 flex flex-col py-28 space-y-6 justify-center'>
+    <footer className='bg-alt-bg xl:px-32 sm:px-16 px-6 flex flex-col py-28 space-y-6 justify-center text-alt-fg'>
         <p>Like what you see?</p>
         <Link href={''}>
           <button className='flex flex-row space-x-3 items-center'>
-            <p className='font-medium text-5xl py-3 border-b-4 border-black'>Say Hello</p>
+            <p className='font-medium text-5xl py-3 border-b-4 border-alt-fg'>Say Hello</p>
             <Image
-                  src={'arrow-right-dark.svg'}
+                  src={'arrow-right-alt.svg'}
                   alt='right arrow'
                   width={36}
                   height={20}
