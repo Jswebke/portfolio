@@ -118,7 +118,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <Link href={''}>
+          <Link href={'/portfolio'}>
                 <button className='flex flex-row space-x-2 items-center btn'>
                   <p>VIEW MORE WORK</p>
                   <Image 

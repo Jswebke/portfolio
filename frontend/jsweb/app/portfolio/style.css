@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid rebeccapurple; */
+}
+body{
+    background: #F1F7F5;
+}
+.hero-text{
+    width: 55vw;
+    margin: auto;
+}
+.hero-text h2{
+    color: #000;
+    font-family: Lora;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    margin-top: 55px;
+}
+.hero-text p{
+    color: #000;
+    text-align: center;
+    font-family: Lora;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+}
+/* -----------sites---------- */
+.sites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    gap: 25vh;
+    margin-top: 20vh;
+}
+.site-wrapper{
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    /* top: 20vh; */
+}
+.site-mockup .mockup{
+    position:relative;
+    left: 20%;
+    top: 10px;
+    z-index: 10;
+
+}
+.site-rectangle{
+    width: 55%;
+    height: 350px;
+    border-radius: 20px;
+    background: #F1F7F5;
+    box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15), 0px 64px 64px 0px rgba(0, 0, 0, 0.13), 0px 145px 87px 0px rgba(0, 0, 0, 0.08), 0px 258px 103px 0px rgba(0, 0, 0, 0.02), 0px 403px 113px 0px rgba(0, 0, 0, 0.00);
+    position: relative;
+    right: 75px;
+}
+
+.site-rectangle h3{
+    color: #000;
+    font-family: Lora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: auto;
+    text-align: start;
+    margin-top: 50px;
+    margin-left: 30%;
+}
+.site-rectangle p{
+    color: #000;
+    font-family: Lora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top:40px;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+.site-rectangle button{
+    display: flex;
+    height: 45px;
+    padding: 0px 22px;
+    align-items: center;
+    border: 2px solid #000;
+    background: #F0F7F4;
+    margin-left: 30%;
+    margin-top: 40px;
+}
+/* ---------------------site-wrapper-left----------- */
+.site-wrapper-left{
+    flex-direction: row-reverse;
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* top: 10vh; */
+}
+.site-mockup-left .mockup{
+    position:relative;
+    right: 15%;
+    /* top:43vh; */
+    z-index: 10;
+
+}
+.site-rectangle-left{
+    width: 55%;
+    height: 350px;
+    border-radius: 20px;
+    background: #F1F7F5;
+    box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15), 0px 64px 64px 0px rgba(0, 0, 0, 0.13), 0px 145px 87px 0px rgba(0, 0, 0, 0.08), 0px 258px 103px 0px rgba(0, 0, 0, 0.02), 0px 403px 113px 0px rgba(0, 0, 0, 0.00);
+    position: relative;
+    left: 10%;
+    /* top: 40vh; */
+}
+
+.site-rectangle-left h2{
+    color: #000;
+    font-family: Lora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: auto;
+    text-align: start;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 30%;
+}
+.site-rectangle-left p{
+    color: #000;
+    font-family: Lora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top:40px;
+    margin-right: 30%;
+    margin-left: 10%;
+}
+.site-rectangle-left button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 45px;
+    padding: 0px 22px;
+    align-items: center;
+    border: 2px solid #000;
+    background: #F0F7F4;
+    margin-right: 30%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+#wrapper-3{
+    position: relative;
+    margin-top: 20vh;
+}
+#last-site{
+    margin-bottom: 20vh;
+}
