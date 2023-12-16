@@ -11,7 +11,7 @@ export default function Home() {
   return show ? (
     <main className="flex flex-col bg-main-bg font-lora overflow-x-hidden">
       <video src='/hero-video.mp4' loop autoPlay muted
-      className='absolute hidden md:block w-screen h-screen object-cover z-10 ' /> 
+      className='absolute hidden md:block w-screen h-screen object-fit z-10 bg-black' /> 
       <NavBar setShow={setShow} show={show}/>
       <section className='md:px-32 z-20 sm:px-24 bg-black px-12 md:bg-opacity-0 flex flex-col' id='hero'>
         <div className="h-screen flex flex-col justify-center text-white md:w-3/4 w-full space-y-12">
