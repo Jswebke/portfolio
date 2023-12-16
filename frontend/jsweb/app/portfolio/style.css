@@ -14,7 +14,7 @@ body{
     color: #000;
     font-family: Lora;
     text-align: center;
-    font-size: 40px;
+    font-size: clamp(2rem,2.0rem,40px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -53,7 +53,7 @@ body{
 .site-mockup .mockup{
     position:relative;
     left: 20%;
-    top: 10px;
+    /* top: 10px; */
     z-index: 10;
 
 }
@@ -70,7 +70,7 @@ body{
 .site-rectangle h3{
     color: #000;
     font-family: Lora;
-    font-size: 36px;
+    font-size: clamp(35px,50%,40px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -173,3 +173,119 @@ body{
 #last-site{
     margin-bottom: 20vh;
 }
+
+@media (min-width:0) and (max-width: 600px) {
+    .hero-text {
+        width: 80%;
+    }
+
+    .site-wrapper{
+        flex-direction: column;
+
+    }
+    .site-mockup .mockup{
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        margin: auto;
+        width: 80%;
+    }
+    .site-rectangle{
+        width: 90%;
+        margin: auto;
+        right: 0px;
+        padding: 20px;
+    }
+    .site-rectangle h3{
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .site-rectangle p{
+        margin: auto;
+        text-align: justify;
+        margin-top: 25px;
+    }
+    .site-rectangle button{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    
+    .site-wrapper-left{
+        flex-direction: column;
+
+    }
+    .site-mockup-left .mockup{
+        top: 0px;
+        right: 0%;
+        left: 0%;
+        margin: auto;
+        width: 80%;
+    }
+    .site-rectangle-left{
+        width: 90%;
+        margin: auto;
+        right: 0px;
+        left: 0px;
+        padding: 20px;
+    }
+    .site-rectangle-left h2{
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .site-rectangle-left p{
+        margin: auto;
+        text-align: justify;
+        margin-top: 25px;
+    }
+    .site-rectangle-left button{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width:600px) and (max-width:1024px) {
+
+    .site-mockup .mockup{
+            left: 10%;
+            width: 100%;
+    }
+    .site-rectangle{
+        right: 10%;
+        height: fit-content;
+    }
+    .site-rectangle p{
+        margin-top: 20px;
+    }
+    .site-rectangle h3{
+        margin-top: 20px;
+    }
+    .site-rectangle button{
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .site-mockup-left .mockup{
+        right: 10%;
+        width: 350px;
+}
+.site-rectangle-left{
+    right: 10%;
+    height: fit-content;
+}
+.site-rectangle-left p{
+    margin-top: 20px;
+}
+.site-rectangle-left h3{
+    margin-top: 20px;
+}
+.site-rectangle-left button{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+    
+        
+    }
