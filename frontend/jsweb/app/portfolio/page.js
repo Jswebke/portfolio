@@ -1,14 +1,26 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import DarkNavBar from '../components/DarkNavBar'
 import style from '../portfolio/style.css'
 import Image from 'next/image'
 import Footer from '../components/Footer'
+import Link from 'next/link'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const portfolio = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration: 800,
+      once: false,
+    })
+  })
   return (
     <>
+    <Link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
       <DarkNavBar/>
 
-      <div className='hero-text'>
+      <div className='hero-text' >
         <h2>Portfolio Projects</h2>
         <p>We are good at building web apps that are use by millions of people and platforms that serve blossoming businesses.</p>
       </div>
@@ -21,10 +33,11 @@ const portfolio = () => {
             width={500}
             height={500}
             className='mockup'
-
+            data-aos='flip-up'
+            data-aos-duration = '1500'
           />
         </div>
-        <div className='site-rectangle'>
+        <div className='site-rectangle' data-aos='fade-up-left'>
           <h3>Anon</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -41,16 +54,18 @@ const portfolio = () => {
     
     {/* ---------------------grilli-site-wrapper-left-2---------------- */}
       <div className='site-wrapper-left'>
-        <div className='site-mockup-left'>
+        <div className='site-mockup-left' dats-aos='fade-up-right'>
           <Image 
             src={"/gericht.png"}
             width={500}
             height={500}
             className='mockup'
+            data-aos='flip-up'
+            data-aos-duration = '1500'
 
           />
         </div>
-        <div className='site-rectangle-left'>
+        <div className='site-rectangle-left' data-aos='fade-up-right' data-aos-duration='1500'>
           <h2>Grilli</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -60,6 +75,7 @@ const portfolio = () => {
             width={20}
             height={20}
             className='btt'
+
             />
           </button>
         </div>
@@ -72,10 +88,11 @@ const portfolio = () => {
             width={500}
             height={500}
             className='mockup'
-
+            data-aos='flip-up'
+            data-aos-duration = '1500'
           />
         </div>
-        <div className='site-rectangle'>
+        <div className='site-rectangle'data-aos='fade-up-left'>
           <h3>Homeverse</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -85,6 +102,7 @@ const portfolio = () => {
             width={20}
             height={20}
             className='btt'
+
             />
           </button>
         </div>
@@ -97,10 +115,12 @@ const portfolio = () => {
             width={500}
             height={500}
             className='mockup'
+            data-aos='flip-up'
+            data-aos-duration = '1500'
 
           />
         </div>
-        <div className='site-rectangle-left'>
+        <div className='site-rectangle-left'data-aos='fade-up-right' data-aos-duration='1500'>
           <h2>Gericht</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -110,6 +130,7 @@ const portfolio = () => {
             width={20}
             height={20}
             className='btt'
+            data-aos='flip-up'
             />
           </button>
         </div>
@@ -123,10 +144,12 @@ const portfolio = () => {
             width={500}
             height={500}
             className='mockup'
+            data-aos='flip-up'
+            data-aos-duration = '1500'
 
           />
         </div>
-        <div className='site-rectangle'>
+        <div className='site-rectangle' data-aos='fade-up-left'>
           <h3>Yukio's Booking</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -136,6 +159,7 @@ const portfolio = () => {
             width={20}
             height={20}
             className='btt'
+            data-aos='flip-up'
             />
           </button>
         </div>
@@ -148,10 +172,12 @@ const portfolio = () => {
             width={500}
             height={500}
             className='mockup'
+            data-aos='flip-up'
+            data-aos-duration = '1500'
 
           />
         </div>
-        <div className='site-rectangle-left'>
+        <div className='site-rectangle-left' data-aos='fade-up-right' data-aos-duration='1500'>
           <h2>Sedo Logistics Limited</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -161,6 +187,7 @@ const portfolio = () => {
             width={20}
             height={20}
             className='btt'
+            data-aos='flip-up'
             />
           </button>
         </div>
@@ -168,8 +195,10 @@ const portfolio = () => {
       </div>
       <Footer/>
       
-      
-
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </>
   )
 }
