@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import './style.css'
 import Link from 'next/link'
@@ -8,8 +9,10 @@ import Footer from '../components/Footer'
 import DarkNavBar from '../components/DarkNavBar'
 import arrow from '@/public/arrow-right-dark.svg'
 import JsWebLogo from '@/public/Logo-removebg 1.png'
+import { useState } from 'react'
 const aboutUs = () => {
-  return (
+  const [show, setShow] = useState(true)
+  return show ? (
     <>
     <DarkNavBar/>
 
@@ -51,7 +54,9 @@ const aboutUs = () => {
     </div>
     <Footer/>
     </>
-    )
+    )  : (
+      <NavBarPage setShow={setShow} />
+      )
 }
 
 export default aboutUs

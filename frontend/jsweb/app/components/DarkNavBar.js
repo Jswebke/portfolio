@@ -5,11 +5,11 @@ import Link from 'next/link'
 const DarkNavBar = ({setShow}) => {
     return (
         <>
-            <div className='w-full py-4 flex flex-row justify-between px-16 items-center text-alt-fg text-sm'>
-                <Link href={''} className='px-2'>
+            <div className='w-full py-4 flex flex-row justify-between px-16 items-center text-alt-fg text-sm bg-alt-bg'>
+                <Link href={'/'} className='px-2'>
                     <button>
                         <Image
-                            src={"/dark-logo.svg"}
+                            src={"/Logo.svg"}
                             alt={'logo'}
                             width={80}
                             height={64}
@@ -17,7 +17,7 @@ const DarkNavBar = ({setShow}) => {
                         />
                     </button>
                 </Link>
-                <div className="flex flex-row items-center space-x-12">
+                <div className="flex flex-row items-center space-x-12 text-white">
                     <Link href={''}>
                         <button>
                             <p>LET'S TALK</p>
