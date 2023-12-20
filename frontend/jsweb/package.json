@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
     "aos": "^2.3.4",
+    "framer-motion": "^10.16.16",
+    "google-map-react": "^2.2.1",
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18"

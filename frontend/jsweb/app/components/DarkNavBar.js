@@ -2,10 +2,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-const DarkNavBar = ({setShow}) => {
+const DarkNavBar = ({show, setShow}) => {
     return (
         <>
-            <div className='w-full py-4 flex flex-row justify-between px-16 items-center text-alt-fg text-sm bg-alt-bg'>
+            <div className='w-full flex flex-row z-50 justify-between px-16 items-center text-alt-fg text-sm bg-alt-bg'>
                 <Link href={'/'} className='px-2'>
                     <button>
                         <Image
@@ -23,7 +23,7 @@ const DarkNavBar = ({setShow}) => {
                             <p>LET'S TALK</p>
                         </button>
                     </Link>
-                    <button onClick={e => setShow(true)}>
+                    <button onClick={e => setShow(!show)}>
                         <Image
                             src={'/dark-menu.svg'}
                             alt='menu'

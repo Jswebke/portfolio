@@ -13,7 +13,7 @@ function NavBarPage({show, setShow}) {
       <div className='flex flex-col font-lora text-6xl space-y-8'>
         <Link href={''}>Work</Link>
         <Link href={''}>About</Link>
-        <Link href={''}>Contact</Link>
+        <Link href={'/contact'}>Contact</Link>
       </div>
     </div>
     <div className='flex flex-col items-center justify-between pt-4 space-y-4
