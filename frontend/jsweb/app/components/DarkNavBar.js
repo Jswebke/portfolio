@@ -7,7 +7,7 @@ const DarkNavBar = ({show, setShow}) => {
         <>
             <div className='w-full flex flex-row z-50 justify-between px-16 items-center text-alt-fg text-sm bg-alt-bg'>
                 <Link href={'/'} className='px-2'>
-                    <button>
+                    <button onClick={() => {setShow(true)}}>
                         <Image
                             src={"/Logo.svg"}
                             alt={'logo'}
@@ -18,8 +18,8 @@ const DarkNavBar = ({show, setShow}) => {
                     </button>
                 </Link>
                 <div className="flex flex-row items-center space-x-12 text-white">
-                    <Link href={''}>
-                        <button>
+                    <Link href={'/contact'}>
+                        <button onClick={() => {setShow(true)}}>
                             <p>LET'S TALK</p>
                         </button>
                     </Link>

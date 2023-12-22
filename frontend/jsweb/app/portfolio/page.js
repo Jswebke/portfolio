@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import DarkNavBar from '../components/DarkNavBar'
 import style from '../portfolio/style.css'
 import Image from 'next/image'
@@ -7,19 +7,20 @@ import Footer from '../components/Footer'
 import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import NavBarPage from '../components/NavBarPage'
 
 const portfolio = () => {
+  const [show, setShow] = useState(true)
   useEffect(()=>{
     AOS.init({
       duration: 800,
       once: false,
     })
   })
-  return (
+  return show ? (
     <>
     <Link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-      <DarkNavBar/>
-
+      <DarkNavBar show={show} setShow={setShow}/>
       <div className='hero-text' >
         <h2>Portfolio Projects</h2>
         <p>We are good at building web apps that are use by millions of people and platforms that serve blossoming businesses.</p>
@@ -200,7 +201,7 @@ const portfolio = () => {
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </>
-  )
+  ) : <NavBarPage show={show} setShow={setShow}/>
 }
 
 export default portfolio

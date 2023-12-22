@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 
 function page() {
     const [show, setShow] = useState(true)
+
     return show ? (
         <main className=''>
             <DarkNavBar show={show} setShow={setShow}/>
@@ -14,6 +15,9 @@ function page() {
                 <div className='flex flex-col items-start justify-center space-y-4'>
                     <p className='md:text-8xl text-7xl font-quattrocento font-medium z-20'>Let's<br />work<br />together</p>
                     <p className='text-lg z-20'>"Passion is what brought us here"</p>
+                    <a href='#Form' className='bg-opacity-100 bg-black border text-white border-black px-6 py-2'>
+                        CONTACT US
+                    </a>
                 </div>
                 <div className="bg-[#E8E8E6] w-full -ml-12 lg:-ml-32 h-[90vh] absolute -z-10 flex flex-row justify-end items-end">
                     <Image
@@ -25,7 +29,7 @@ function page() {
                     />
                 </div>
             </section>
-            <section className='flex flex-row pl-12 justify-between items-center bg-white lg:pl-32 pr-16 w-full py-12 '>
+            <section className='flex flex-row pl-12 justify-between items-center bg-white lg:pl-32 pr-16 w-full py-12 ' id='Form'>
                 <div className='flex flex-col space-y-6 items-start justify-start w-full lg:w-1/2'>
                     <h1 className='font-quattrocento font-medium text-[2.75rem] leading-[3.5rem]'>Hi. Tell us about your project</h1>
                         <p className=''>Fill in the form and send us an email</p>

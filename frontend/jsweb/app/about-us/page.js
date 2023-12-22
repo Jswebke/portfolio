@@ -10,11 +10,12 @@ import DarkNavBar from '../components/DarkNavBar'
 import arrow from '@/public/arrow-right-dark.svg'
 import JsWebLogo from '@/public/Logo-removebg 1.png'
 import { useState } from 'react'
+import NavBarPage from '../components/NavBarPage'
 const aboutUs = () => {
   const [show, setShow] = useState(true)
   return show ? (
     <>
-    <DarkNavBar/>
+    <DarkNavBar show={show} setShow={setShow}/>
 
     {/* --------------------hero section--------------------- */}
     <div className='heroText-wrapper'>
@@ -54,9 +55,7 @@ const aboutUs = () => {
     </div>
     <Footer/>
     </>
-    )  : (
-      <NavBarPage setShow={setShow} />
-      )
+    )  : <NavBarPage setShow={setShow} />
 }
 
 export default aboutUs
