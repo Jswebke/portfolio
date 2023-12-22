@@ -66,7 +66,7 @@ const portfolio = () => {
 
           />
         </div>
-        <div className='site-rectangle-left' data-aos='fade-up-right' data-aos-duration='1500'>
+        <div className='site-rectangle-left' data-aos='fade-up-right' >
           <h2>Grilli</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -121,7 +121,7 @@ const portfolio = () => {
 
           />
         </div>
-        <div className='site-rectangle-left'data-aos='fade-up-right' data-aos-duration='1500'>
+        <div className='site-rectangle-left'data-aos='fade-up-right' >
           <h2>Gericht</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -178,7 +178,7 @@ const portfolio = () => {
 
           />
         </div>
-        <div className='site-rectangle-left' data-aos='fade-up-right' data-aos-duration='1500'>
+        <div className='site-rectangle-left' data-aos='fade-up-right' >
           <h2>Sedo Logistics Limited</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
