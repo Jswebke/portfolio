@@ -7,7 +7,7 @@ function NavBar({show, setShow}) {
     
   return (
     <nav className='w-full py-4 absolute flex flex-row justify-between z-50 px-16 items-center text-white text-sm'>
-    <Link href={''} className='px-2'>
+    <Link href={'/'} className='px-2'>
         <button>
             <Image
                 src={"/logo.svg"}

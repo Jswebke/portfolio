@@ -16,13 +16,13 @@ function NavBarPage({show, setShow}) {
           <i className='font-quattrocento text-2xl -rotate-90'>MENU</i>
         <div className='flex flex-col font-lora text-6xl space-y-8'>
           <Reveal delay={0.4}>
-            <Link href={'/portfolio'} onClick={() => {setShow(true)}}>Work</Link>
+            <Link href={'/portfolio'}>Work</Link>
           </Reveal>
           <Reveal delay={0.6}>
-            <Link href={'/about-us'} onClick={() => {setShow(true)}}>About</Link>
+            <Link href={'/about-us'}>About</Link>
           </Reveal>
           <Reveal delay={0.8}>
-            <Link href={'/contact'} onClick={() => {setShow(true)}}>Contact</Link>
+            <Link href={'/contact'}>Contact</Link>
           </Reveal>
         </div>
       </div>
