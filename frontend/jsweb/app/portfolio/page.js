@@ -8,6 +8,7 @@ import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NavBarPage from '../components/NavBarPage'
+import Reveal from '../components/Reveal'
 
 const portfolio = () => {
   const [show, setShow] = useState(true)
@@ -38,7 +39,9 @@ const portfolio = () => {
             data-aos-duration = '1500'
           />
         </div>
-        <div className='site-rectangle' data-aos='fade-up-left'>
+        <></>
+       
+        <div className='site-rectangle' data-aos="fade-up">
           <h3>Anon</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -66,7 +69,7 @@ const portfolio = () => {
 
           />
         </div>
-        <div className='site-rectangle-left' data-aos='fade-up-right' >
+        <div className='site-rectangle-left' data-aos="fade-up" >
           <h2>Grilli</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -93,7 +96,7 @@ const portfolio = () => {
             data-aos-duration = '1500'
           />
         </div>
-        <div className='site-rectangle'data-aos='fade-up-left'>
+        <div className='site-rectangle'data-aos="fade-up">
           <h3>Homeverse</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -121,7 +124,7 @@ const portfolio = () => {
 
           />
         </div>
-        <div className='site-rectangle-left'data-aos='fade-up-right' >
+        <div className='site-rectangle-left'data-aos='fade-up' >
           <h2>Gericht</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -150,7 +153,7 @@ const portfolio = () => {
 
           />
         </div>
-        <div className='site-rectangle' data-aos='fade-up-left'>
+        <div className='site-rectangle' data-aos='fade-up'>
           <h3>Yukio's Booking</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -178,7 +181,7 @@ const portfolio = () => {
 
           />
         </div>
-        <div className='site-rectangle-left' data-aos='fade-up-right' >
+        <div className='site-rectangle-left' data-aos='fade-up' >
           <h2>Sedo Logistics Limited</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
