@@ -28,8 +28,8 @@ export default function Home() {
             <p className='xl:w-1/2 lg:3/4 md:w-5/6'>J’s Web is a team of creatives and seasoned sales experts dedicated to deliver tangible business benefits to enterprises eager to establish an online presence and monetize traffic from diverse channels.</p>
           </Reveal>
           <Reveal delay={0.2}>
-            <Link href={"/about-us"} className='flex flex-row space-x-2 text-sm btn-light'>
-              <p className='text-n'>GET TO KNOW US</p>
+            <Link href={"/contact"} className='flex flex-row space-x-2 text-sm btn-light'>
+              <p className='text-n'>CONTACT US</p>
               <Image
               src={"/arrow-right.svg"}
               alt='arrow'
