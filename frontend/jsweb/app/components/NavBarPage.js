@@ -32,7 +32,7 @@ function NavBarPage({show, setShow}) {
       md:flex-row md:space-y-0 md:px-12
       lg:px-28
       xl:px-32 '>
-            <div className="flex flex-row items-center justify-start space-x-4">
+            <div className="flex flex-col items-start self-start px-16 justify-start space-y-4 md:flex-row md:items-center md:space-x-4">
               <div className="flex flex-row items-center justify-center text-sm space-x-2">
                 <Image
                   src={'/tiny-map.svg'}
@@ -68,7 +68,7 @@ function NavBarPage({show, setShow}) {
                 </div>
               </Reveal>
             </div>
-            <div className='flex flex-row items-center justify-end space-x-10'>
+            <div className='flex flex-row items-center justify-between w-full px-16 md:justify-end md:w-fit md:space-x-10'>
               <Reveal delay={1.4}>
                 <a href={'https://www.instagram.com'} target='_blank'>
                   <button>
