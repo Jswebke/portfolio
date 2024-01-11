@@ -20,7 +20,7 @@ function NavBar({show, setShow}) {
         </button>
     </Link>
     <div className="flex flex-row items-center space-x-12">
-        <Link href={'/contact'}>
+        <Link href={'/contact'} className='hidden md:block'>
             <button>
                 <p>LET'S TALK</p>
             </button>

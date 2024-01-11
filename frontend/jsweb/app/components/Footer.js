@@ -20,7 +20,7 @@ function Footer() {
         </Link>
         <div className='flex flex-col pt-4 items-start space-y-4
         md:flex-row md:items-center md:justify-between md:space-y-0 '>
-          <div className="flex flex-row items-center justify-start space-x-4">
+          <div className="flex flex-col space-y-2 items-start md:flex-row md:items-center justify-start md:space-x-4">
             <div className="flex flex-row items-center justify-center text-sm space-x-2">
               <Image 
                 src={'/tiny-map.svg'}
@@ -52,7 +52,7 @@ function Footer() {
               <p>info@jsweb.com</p>
             </div>
           </div>
-          <div className='flex flex-row items-center justify-end space-x-6'>
+          <div className='flex flex-row items-center justify-between w-3/4 md:w-fit md:justify-end md:space-x-6'>
             <a href={'https://www.instagram.com'} target='_blank'>
               <button>
                 <Image 

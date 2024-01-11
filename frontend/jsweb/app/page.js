@@ -15,8 +15,8 @@ export default function Home() {
       <video src='/hero-video.mp4' loop autoPlay muted
       className='absolute hidden md:block w-screen h-screen object-fit z-10 bg-black' /> 
       <NavBar setShow={setShow} show={show}/>
-      <section className='md:px-32 z-20 sm:px-24 bg-black px-12 md:bg-opacity-0 flex flex-col' id='hero'>
-        <div className="h-screen flex flex-col justify-center text-white md:w-3/4 w-full space-y-12">
+      <section className='lg:px-32 w-screen z-20 sm:px-24 bg-black px-12 md:bg-opacity-0 flex flex-col' id='hero'>
+        <div className="h-screen flex flex-col items-start justify-center text-white md:w-3/4 w-full space-y-12">
           <Reveal duration={0.5}>  
             <h1 className='font-quattrocento xl:text-8xl xl:leading-[7rem]
             lg:text-7xl lg:leading-[5rem]
@@ -25,7 +25,7 @@ export default function Home() {
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className='xl:w-1/2 lg:w-3/4'>J’s Web is a team of creatives and seasoned sales experts dedicated to deliver tangible business benefits to enterprises eager to establish an online presence and monetize traffic from diverse channels.</p>
+            <p className='xl:w-1/2 lg:3/4 md:w-5/6'>J’s Web is a team of creatives and seasoned sales experts dedicated to deliver tangible business benefits to enterprises eager to establish an online presence and monetize traffic from diverse channels.</p>
           </Reveal>
           <Reveal delay={0.2}>
             <Link href={"/contact"} className='flex flex-row space-x-2 text-sm btn-light'>
@@ -58,7 +58,7 @@ export default function Home() {
               alt='image'
               width={500}
               height={300}
-              className='aspect-auto xl:w-auto lg:w-1/2 w-full'
+              className='aspect-auto xl:w-[560px] lg:w-[440px] w-full'
               />
             <div className="flex flex-col space-y-4 lg:w-2/4 w-full">
               <h3 className='text-3xl font-quattrocento font-semibold'>Anon</h3>
@@ -87,7 +87,7 @@ export default function Home() {
                 alt='image'
                 width={500}
                 height={300}
-                className='aspect-auto xl:w-auto lg:w-1/2 w-full'
+              className='aspect-auto xl:w-[560px] lg:w-[440px] w-full'
                 />
               <div className="flex flex-col space-y-4 lg:w-2/4 w-full">
                 <h3 className='text-3xl font-quattrocento font-semibold'>Homeverse</h3>
@@ -116,7 +116,7 @@ export default function Home() {
               alt='image'
               width={500}
               height={300}
-              className='aspect-auto xl:w-auto lg:w-1/2 w-full'
+              className='aspect-auto xl:w-[560px] lg:w-[440px] w-full'
               />
             <div className="flex flex-col space-y-4 lg:w-2/4 w-full">
               <h3 className='text-3xl font-quattrocento font-semibold'>Grilli</h3>
@@ -153,16 +153,16 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <section className='flex flex-col w-full justify-center items-start space-y-6 text-white bg-alt-bg px-16 py-28
-      md:flex-row md:-space-x-4 md:items-center md:space-y-0
+      <section className='flex flex-col w-full justify-between items-start space-y-6 text-white bg-alt-bg px-16 py-28
+      md:flex-row md:items-center md:space-y-0
       lg:py-36 xl:px-32 
       xl:py-44 '>
         <Reveal>
-          <h2 className='xl:text-6xl lg:text-5xl text-4xl font-quattrocento font-medium md:w-1/2 pr-8'>Full Service Digital Consultancy</h2>
+          <h2 className='lg:text-5xl text-4xl font-quattrocento font-medium md:w-3/4'>Full Service Digital Consultancy</h2>
         </Reveal>
-        <div className='flex flex-col md:w-1/2 space-y-6'>
+        <div className='flex flex-col md:w-3/4 space-y-6'>
           <Reveal delay={0.3}>
-            <p className='md:border-l-[3px] text-start h-full border-alt-fg w-full md:pl-4 font-medium font-lato'>We are committed to launching businesses, elevating their enterprise value, and redefining their market penetration strategies. Through innovation and dedicated effort, we aim to bring joy and success to our clients.</p>
+            <p className='md:border-l-[3px] text-start h-full border-alt-white w-full md:pl-4 font-medium font-lato'>We are committed to launching businesses, elevating their enterprise value, and redefining their market penetration strategies. Through innovation and dedicated effort, we aim to bring joy and success to our clients.</p>
           </Reveal>
           <Reveal delay={0.3}>
             <Link href={''}>
@@ -181,7 +181,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col px-16 py-20 items-center justify- space-y-8
+      <section className='flex flex-col px-16 py-20 items-start md:items-center justify-start space-y-8
       xl:px-32'>
         <Reveal>
           <h2 className='font-quattrocento font-medium text-4xl tracking-wide'>Our Services</h2>
