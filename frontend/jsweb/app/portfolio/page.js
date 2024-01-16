@@ -14,9 +14,9 @@ const portfolio = () => {
   const [show, setShow] = useState(true)
   useEffect(()=>{
     AOS.init({
-      duration: 800,
-      once: false,
-    })
+      // duration: 800,
+      once: true,
+    },[])
   })
   return show ? (
     <>

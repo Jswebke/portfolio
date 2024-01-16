@@ -39,7 +39,7 @@ function Footer() {
                 height={10}
                 className='aspect-auto'
               />
-              <p>+254 700 000 000</p>
+              <p>+254 112 700 035</p>
             </div>
             <div className="flex flex-row items-center justify-center text-sm space-x-2">
               <Image 
@@ -53,7 +53,7 @@ function Footer() {
             </div>
           </div>
           <div className='flex flex-row items-center justify-between w-3/4 md:w-fit md:justify-end md:space-x-6'>
-            <a href={'https://www.instagram.com'} target='_blank'>
+            <a href={'https://www.instagram.com/jswebke/'} target='_blank'>
               <button>
                 <Image 
                   src={'/insta-icon.svg'}
@@ -64,7 +64,7 @@ function Footer() {
                 />
               </button>
             </a>
-            <a href={'https://www.facebook.com'} target='_blank'>
+            <a href={'https://www.facebook.com/profile.php?id=61555893321375'} target='_blank'>
               <button>
                 <Image 
                   src={'/facebook-icon.svg'}
@@ -75,7 +75,7 @@ function Footer() {
                 />    
               </button>
             </a>
-            <a href={'https://www.linkedin.com/'} target='_blank'>
+            <a href={'https://www.linkedin.com/company/101399999/admin/feed/posts/'} target='_blank'>
               <button>
                 <Image 
                   src={'/linked-in-icon.svg'}
@@ -86,7 +86,7 @@ function Footer() {
                 />    
               </button>
             </a>
-            <a href={'https://www.github.com/'} target='_blank'>
+            <a href={'https://github.com/Jswebke'} target='_blank'>
               <button>
                 <Image 
                   src={'/github-icon.svg'}

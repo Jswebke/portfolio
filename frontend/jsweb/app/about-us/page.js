@@ -18,15 +18,16 @@ const aboutUs = () => {
     <DarkNavBar show={show} setShow={setShow}/>
 
     {/* --------------------hero section--------------------- */}
-    <div className='heroText-wrapper'>
-     <h2>We believe in technology's<br/>transformative power, driving digital<br/>growth for our clients.</h2>
-     <div className='CTA-btt'>
-        <button>
-          <Link href={""} className='link'>OUR COMPANY PROFILE</Link>
-          < Image className='' src={arrow} width={0} height={0}/>
-        </button>
-
-     </div>
+    <div className='hero-bg'>
+      <div className='heroText-wrapper'>
+        <h2>We believe in technology's<br/>transformative power, driving digital<br/>growth for our clients.</h2>
+        <div className='CTA-btt'>
+            <button>
+              <Link href={""} className='link'>OUR COMPANY PROFILE</Link>
+              < Image className='' src={arrow} width={0} height={0}/>
+            </button>
+        </div>
+      </div>
     </div>
     < Image className='two-men-image' src={image1} width={0} height={0}/>
 
