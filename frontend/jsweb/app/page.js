@@ -35,7 +35,7 @@ export default function Home() {
                 loop: true,
                 }}
                 />
-            </h1>
+           </h1>
           </Reveal>
           {/* --------------------------------------about jsweb---------------------- */}
           <Reveal delay={0.1}>
