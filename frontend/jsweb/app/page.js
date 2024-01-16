@@ -8,6 +8,7 @@ import { useState } from 'react'
 import Footer from './components/Footer'
 import NavBarPage from './components/NavBarPage'
 import Reveal from './components/Reveal'
+import Typewriter from 'typewriter-effect'
 export default function Home() {
   const [show, setShow] = useState(true)
   return show ? (
@@ -18,10 +19,16 @@ export default function Home() {
       <section className='lg:px-32 w-screen z-20 sm:px-24 bg-black px-12 md:bg-opacity-0 flex flex-col' id='hero'>
         <div className="h-screen flex flex-col items-start justify-center text-white md:w-3/4 w-full space-y-12">
           <Reveal duration={0.5}>  
-            <h1 className='font-quattrocento xl:text-8xl xl:leading-[7rem]
-            lg:text-7xl lg:leading-[5rem]
-            text-5xl'>
-              Creating Real Business Value.
+             <h1 className='font-quattrocento xl:text-8xl xl:leading-[7rem] lg:text-7xl lg:leading-[5rem] text-5xl'>
+              Creating Real Business <Typewriter 
+                strings: [
+                  "Value.",
+                  "Brands."
+                ],
+                autoStart: true,
+                loop: true,
+                }}
+                />
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
