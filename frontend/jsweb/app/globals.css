@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 .btn {
-<<<<<<< HEAD
-    @apply bg-opacity-0 text-black items-center justify-center min-w-fit w-64 py-2 px-4 border-2 border-black hover:bg-black hover:text-white hover:bg-opacity-100
+    @apply bg-opacity-0 text-black items-center justify-center min-w-fit w-64 py-2 px-4 border-2 border-black hover:bg-black hover:text-white hover:bg-opacity-100 ease-in duration-200
 }
 
 .btn-light {
-    @apply bg-opacity-0 text-white items-center justify-center min-w-fit w-64 py-2 px-4 border-2 border-white hover:bg-white hover:bg-opacity-100 hover:text-black
+    @apply bg-opacity-0 text-white items-center justify-center min-w-fit w-64 py-2 px-4 border-2 border-white hover:bg-white hover:bg-opacity-100 hover:text-black ease-in duration-200
 
 }
 .arrow{
@@ -18,12 +17,3 @@
 .arrow-alt{
     @apply hidden group-hover:block
 }
-=======
-    @apply bg-opacity-0 text-black items-center justify-center min-w-fit w-64 py-2 px-4 border-2 border-black hover:bg-black hover:text-white
-}
-
-.btn-light {
-    @apply bg-opacity-0 text-white items-center justify-center min-w-fit w-64 py-2 px-4 border-2 border-white hover:bg-black hover:text-white
-
-}
->>>>>>> 2dd7dbec5f72f54e994998ad930c2c30bef2bd53

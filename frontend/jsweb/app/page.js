@@ -28,7 +28,7 @@ export default function Home() {
         <div className="h-screen flex flex-col items-start justify-center text-white md:w-3/4 w-full space-y-12">
           {/* --------------------creating real value h1 --------------------- */}
           <Reveal duration={0.5}>  
-          <h1 className='font-quattrocento xl:text-8xl xl:leading-[7rem] lg:text-6xl lg:leading-[5rem] text-5xl w-full -mb-12 md:-mb-24'>
+          <h1 className='font-quattrocento lg:text-6xl lg:leading-[5rem] text-5xl w-full -mb-12 md:-mb-24'>
               Creating Real Business <Typewriter // Added animation of the words "value" and "brands" using typewriter effect (Change the margin bottom to fit the text well and the size*)
               options={{
                 strings: [
