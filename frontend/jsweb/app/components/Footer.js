@@ -10,7 +10,7 @@ function Footer() {
           <button className='flex flex-row space-x-3 items-center'>
             <p className='font-medium text-5xl py-3 border-b-4 border-alt-fg'>Say Hello</p>
             <Image
-                  src={'arrow-right-alt.svg'}
+                  src={'/arrow-right-alt.svg'}
                   alt='right arrow'
                   width={36}
                   height={20}

@@ -9,11 +9,15 @@ import Footer from './components/Footer'
 import NavBarPage from './components/NavBarPage'
 import Reveal from './components/Reveal'
 import Typewriter from 'typewriter-effect'
+
 export default function Home() {
   const [show, setShow] = useState(true)
-  return show ? (
-    <main className="flex flex-col bg-main-bg font-lora overflow-x-hidden">
 
+  return show ? (
+    
+    <main className="flex flex-col bg-main-bg font-lora overflow-x-hidden">
+      <title>Creating Real Business Value</title>
+      <meta name="description" content="An web design agency that creates real business value"></meta>
       {/* ----------blob video------------- */}
       <video src='/hero-video.mp4' loop autoPlay muted
       className='absolute hidden md:block w-screen h-screen object-fit z-10 bg-black' />
