@@ -14,7 +14,7 @@ function Footer() {
                   alt='right arrow'
                   width={36}
                   height={20}
-                  className='aspect-auto stroke-black'
+                  className='aspect-auto stroke-blackz'
                   />
           </button>
         </Link>

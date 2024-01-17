@@ -20,11 +20,11 @@ export default function Home() {
       {/*----------Navbar---------*/} 
       <NavBar setShow={setShow} show={show}/>  
       {/* --------------Hero Section--------------------- */}
-      <section className='lg:px-32 w-screen z-20 sm:px-24 bg-black px-12 md:bg-opacity-0 flex flex-col' id='hero'>
+      <section className='lg:px-32 w-screen h-screen z-20 sm:px-24 bg-black py-20 px-12 md:bg-opacity-0 flex flex-col' id='hero'>
         <div className="h-screen flex flex-col items-start justify-center text-white md:w-3/4 w-full space-y-12">
           {/* --------------------creating real value h1 --------------------- */}
           <Reveal duration={0.5}>  
-          <h1 className='font-quattrocento xl:text-8xl xl:leading-[7rem] lg:text-7xl lg:leading-[1rem] text-5xl'>
+          <h1 className='font-quattrocento xl:text-8xl xl:leading-[7rem] lg:text-6xl lg:leading-[5rem] text-5xl w-full -mb-12 md:-mb-24'>
               Creating Real Business <Typewriter // Added animation of the words "value" and "brands" using typewriter effect (Change the margin bottom to fit the text well and the size*)
               options={{
                 strings: [
@@ -43,14 +43,21 @@ export default function Home() {
           </Reveal>
           {/* ---------------------------------contact us call to action------------------------------ */}
           <Reveal delay={0.2}>
-            <Link href={"/contact"} className='flex flex-row space-x-2 text-sm btn-light'>
+            <Link href={"/contact"} className='flex flex-row space-x-2 text-sm btn-light group '>
               <p className='text-n'>CONTACT US</p>
               <Image
               src={"/arrow-right.svg"}
               alt='arrow'
               width={20}
               height={20}
-              className='aspect-auto'
+              className='aspect-auto arrow'
+              />
+              <Image
+              src={"/arrow-right-dark.svg"}
+              alt='arrow'
+              width={20}
+              height={20}
+              className='aspect-auto arrow-alt'
               />
             
             </Link>
@@ -82,7 +89,7 @@ export default function Home() {
               <h3 className='text-3xl font-quattrocento font-semibold'>Anon</h3>
               <p className='text-2xl'>Ecommerce website</p>
               <p>This is a template text that is just meant to be used as a place holder text . J’s Web is a team of creatives and seasoned sales experts dedicated to deliver tangible business benefits to enterprises.</p>
-              <Link href={'https://fredwebdesigneranddeveloper.on.drv.tw/Website/Shopping%20website/'}>
+              <Link href={'https://fredwebdesigneranddeveloper.on.drv.tw/Website/Shopping%20website/'} className='group'>
                 <button className='flex flex-row space-x-2 items-center btn'>
                   <p>Visit Anon</p>
                   <Image 
@@ -90,7 +97,14 @@ export default function Home() {
                     alt='right arrow'
                     width={20}
                     height={20}
-                    className='aspect-auto stroke-black'
+                    className='aspect-auto stroke-black arrow'
+                    />
+                  <Image 
+                    src={'arrow-right.svg'}
+                    alt='right arrow'
+                    width={20}
+                    height={20}
+                    className='aspect-auto stroke-black arrow-alt'
                     />
                 </button>
               </Link>
@@ -113,15 +127,22 @@ export default function Home() {
                 <p className='text-2xl'>Real Estate website</p>
                 <p>This is a template text that is just meant to be used as a place holder text . J’s Web is a team of creatives and seasoned sales experts dedicated to deliver tangible business benefits to enterprises.</p>
                 <Link href={'https://fredwebdesigneranddeveloper.on.drv.tw/Website/Homeverse%20Real%20Estate/'}>
-                  <button className='flex flex-row space-x-2 items-center btn'>
+                  <button className='flex flex-row space-x-2 items-center btn group'>
                     <p>Visit Homeverse</p>
                     <Image 
-                      src={'arrow-right-dark.svg'}
-                      alt='right arrow'
-                      width={20}
-                      height={20}
-                      className='aspect-auto stroke-black'
-                      />
+                    src={'arrow-right-dark.svg'}
+                    alt='right arrow'
+                    width={20}
+                    height={20}
+                    className='aspect-auto stroke-black arrow'
+                    />
+                  <Image 
+                    src={'arrow-right.svg'}
+                    alt='right arrow'
+                    width={20}
+                    height={20}
+                    className='aspect-auto stroke-black arrow-alt'
+                    />
                   </button>
                 </Link>
               </div>
@@ -143,14 +164,21 @@ export default function Home() {
               <p className='text-2xl'>Restuarant website</p>
               <p>This is a template text that is just meant to be used as a place holder text . J’s Web is a team of creatives and seasoned sales experts dedicated to deliver tangible business benefits to enterprises.</p>
               <Link href={'https://fredwebdesigneranddeveloper.on.drv.tw/Website/Grilli/'}>
-                <button className='flex flex-row space-x-2 items-center btn'>
+                <button className='flex flex-row space-x-2 items-center btn group'>
                   <p>Visit Grilli</p>
                   <Image 
                     src={'arrow-right-dark.svg'}
                     alt='right arrow'
                     width={20}
                     height={20}
-                    className='aspect-auto stroke-black'
+                    className='aspect-auto stroke-black arrow'
+                    />
+                  <Image 
+                    src={'arrow-right.svg'}
+                    alt='right arrow'
+                    width={20}
+                    height={20}
+                    className='aspect-auto stroke-black arrow-alt'
                     />
                 </button>
               </Link>
@@ -160,14 +188,21 @@ export default function Home() {
         {/* -----------------more work btt---------------------- */}
         <Reveal>
           <Link href={'/portfolio'}>
-                <button className='flex flex-row space-x-2 items-center btn'>
+                <button className='flex flex-row space-x-2 items-center btn group'>
                   <p>VIEW MORE WORK</p>
                   <Image 
                     src={'arrow-right-dark.svg'}
                     alt='right arrow'
                     width={20}
                     height={20}
-                    className='aspect-auto stroke-black'
+                    className='aspect-auto stroke-black arrow'
+                    />
+                  <Image 
+                    src={'arrow-right.svg'}
+                    alt='right arrow'
+                    width={20}
+                    height={20}
+                    className='aspect-auto stroke-black arrow-alt'
                     />
                 </button>
               </Link>
@@ -187,14 +222,21 @@ export default function Home() {
           </Reveal>
           <Reveal delay={0.3}>
             <Link href={'/about-us'}>
-              <button className='flex flex-row space-x-2 btn-light'>
+              <button className='flex flex-row space-x-2 btn-light group'>
               <p>FIND OUT MORE ABOUT US</p>
                     <Image 
                       src={'arrow-right.svg'}
                       alt='right arrow'
                       width={20}
                       height={20}
-                      className='aspect-auto stroke-black'
+                      className='aspect-auto stroke-black arrow'
+                      />
+                    <Image 
+                      src={'arrow-right-dark.svg'}
+                      alt='right arrow'
+                      width={20}
+                      height={20}
+                      className='aspect-auto stroke-black arrow-alt'
                       />
               </button>
             </Link>

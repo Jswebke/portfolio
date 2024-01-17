@@ -9,7 +9,7 @@ const DarkNavBar = ({show, setShow}) => {
                 <Link href={'/'} className='px-2'>
                     <button>
                         <Image
-                            src={"/Logo.svg"}
+                            src={"/logo.svg"}
                             alt={'logo'}
                             width={80}
                             height={64}
