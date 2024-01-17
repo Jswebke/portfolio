@@ -16,6 +16,9 @@ function NavBarPage({show, setShow}) {
           <i className='font-quattrocento text-2xl -rotate-90'>MENU</i>
         <div className='flex flex-col font-lora text-6xl space-y-8'>
           <Reveal delay={0.4}>
+            <Link href={'/'}>Home</Link>
+          </Reveal>
+          <Reveal delay={0.4}>
             <Link href={'/portfolio'}>Work</Link>
           </Reveal>
           <Reveal delay={0.6}>
