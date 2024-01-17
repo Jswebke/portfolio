@@ -15,7 +15,7 @@ function NavBar({show, setShow}) {
                 width={80}
                 height={64}
                 className='aspect-auto'
-                href={'/'}
+            
             />
         </button>
     </Link>

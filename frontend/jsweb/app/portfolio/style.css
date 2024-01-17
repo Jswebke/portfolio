@@ -255,7 +255,7 @@ body{
     }
     .site-rectangle{
         right: 10%;
-        height: fit-content;
+    
     }
     .site-rectangle p{
         margin-top: 20px;
@@ -274,7 +274,6 @@ body{
 }
 .site-rectangle-left{
     right: 10%;
-    height: fit-content;
 }
 .site-rectangle-left p{
     margin-top: 20px;
