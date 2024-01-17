@@ -20,7 +20,8 @@ export default function Home() {
           <Reveal duration={0.5}>  
             <h1 className='font-quattrocento xl:text-8xl xl:leading-[7rem]
             lg:text-7xl lg:leading-[5rem]
-            text-5xl'>
+            md:text-5xl
+            text-4xl'>
               Creating Real Business Value.
             </h1>
           </Reveal>
