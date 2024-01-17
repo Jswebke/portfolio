@@ -10,6 +10,8 @@ function page() {
 
     return show ? (
         <main className=''>
+            <title>Contact Us – Let’s work together</title>
+            <meta name="description" content="Get in touch with J's Web for top-notch development services."></meta>
             <DarkNavBar show={show} setShow={setShow}/>
             <section className='w-full h-[90vh] pl-12 z-0 lg:px-32 flex flex-col justify-center items-start overflow-x-hidden'>
                 <div className='flex flex-col items-start justify-center space-y-4'>

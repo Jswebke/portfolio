@@ -20,7 +20,11 @@ const portfolio = () => {
   })
   return show ? (
     <>
+    <title>Portfolio Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore J's portfolio, elevate brand with creative solutions"></meta>
     <Link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
       <DarkNavBar show={show} setShow={setShow}/>
       <div className='hero-text' >
         <h2>Portfolio Projects</h2>
@@ -37,6 +41,7 @@ const portfolio = () => {
             className='mockup'
             data-aos='flip-up'
             data-aos-duration = '1500'
+            alt="anon-website"
           />
         </div>
         <></>
@@ -51,6 +56,7 @@ const portfolio = () => {
             width={20}
             height={20}
             className='btt'
+            alt="arrow"
             />
           </button>
         </div>
@@ -66,10 +72,11 @@ const portfolio = () => {
             className='mockup'
             data-aos='flip-up'
             data-aos-duration = '1500'
+            alt='grilli-website'
 
           />
         </div>
-        <div className='site-rectangle-left' data-aos="fade-up" >
+        <div className='site-rectangle-left' >
           <h2>Grilli</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -79,6 +86,8 @@ const portfolio = () => {
             width={20}
             height={20}
             className='btt'
+
+            alt='arrow'
 
             />
           </button>
@@ -94,9 +103,10 @@ const portfolio = () => {
             className='mockup'
             data-aos='flip-up'
             data-aos-duration = '1500'
+            alt='homeverse-website'
           />
         </div>
-        <div className='site-rectangle'data-aos="fade-up">
+        <div className='site-rectangle'>
           <h3>Homeverse</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -106,6 +116,7 @@ const portfolio = () => {
             width={20}
             height={20}
             className='btt'
+            alt='arrow'
 
             />
           </button>
@@ -121,10 +132,11 @@ const portfolio = () => {
             className='mockup'
             data-aos='flip-up'
             data-aos-duration = '1500'
+            alt='gericht website'
 
           />
         </div>
-        <div className='site-rectangle-left'data-aos='fade-up' >
+        <div className='site-rectangle-left' >
           <h2>Gericht</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -150,10 +162,10 @@ const portfolio = () => {
             className='mockup'
             data-aos='flip-up'
             data-aos-duration = '1500'
-
+            alt="yukio-website"
           />
         </div>
-        <div className='site-rectangle' data-aos='fade-up'>
+        <div className='site-rectangle'>
           <h3>Yukio's Booking</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -164,6 +176,9 @@ const portfolio = () => {
             height={20}
             className='btt'
             data-aos='flip-up'
+            data-aos-duration = '1500'
+
+            alt='arrow'
             />
           </button>
         </div>
@@ -179,9 +194,11 @@ const portfolio = () => {
             data-aos='flip-up'
             data-aos-duration = '1500'
 
+            alt='sedo-website'
+
           />
         </div>
-        <div className='site-rectangle-left' data-aos='fade-up' >
+        <div className='site-rectangle-left'  >
           <h2>Sedo Logistics Limited</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <button>
@@ -192,6 +209,9 @@ const portfolio = () => {
             height={20}
             className='btt'
             data-aos='flip-up'
+            data-aos-duration = '1500'
+
+            alt='arrow'
             />
           </button>
         </div>

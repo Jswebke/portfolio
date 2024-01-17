@@ -9,11 +9,15 @@ import Footer from './components/Footer'
 import NavBarPage from './components/NavBarPage'
 import Reveal from './components/Reveal'
 import Typewriter from 'typewriter-effect'
+
 export default function Home() {
   const [show, setShow] = useState(true)
-  return show ? (
-    <main className="flex flex-col bg-main-bg font-lora overflow-x-hidden">
 
+  return show ? (
+    
+    <main className="flex flex-col bg-main-bg font-lora overflow-x-hidden">
+      <title>Creating Real Business Value</title>
+      <meta name="description" content="An web design agency that creates real business value"></meta>
       {/* ----------blob video------------- */}
       <video src='/hero-video.mp4' loop autoPlay muted
       className='absolute hidden md:block w-screen h-screen object-fit z-10 bg-black' />
@@ -24,7 +28,8 @@ export default function Home() {
         <div className="h-screen flex flex-col items-start justify-center text-white md:w-3/4 w-full space-y-12">
           {/* --------------------creating real value h1 --------------------- */}
           <Reveal duration={0.5}>  
-          <h1 className='font-quattrocento xl:text-8xl xl:leading-[7rem] lg:text-7xl lg:leading-[1rem] text-5xl'>
+
+          <h1  className='font-quattrocento xl:text-8xl xl:leading-[7rem] lg:text-2xl lg:leading-[1rem] text-1xl' id="real-value-h1">{/* */}
               Creating Real Business <Typewriter // Added animation of the words "value" and "brands" using typewriter effect (Change the margin bottom to fit the text well and the size*)
               options={{
                 strings: [
