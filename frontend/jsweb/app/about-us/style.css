@@ -38,7 +38,7 @@
     margin-top: 45px;
     
 }
-.CTA-btt button{
+.button{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -46,7 +46,6 @@
     border: 0.8px solid black;
     padding: 10px 14px;
     margin-bottom: 35px;
-    border-radius: 5px;
     color: #000;
     background-color: none;
     text-decoration: none;
@@ -56,10 +55,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: flex;
+    height: 45px;
+    padding: 0px 22px;
+    border: 2px solid #000;
 }
 .link{
     color: black;
     text-decoration: none;
+    border: 1px;
+    padding: 14px 20px;
 
 
 }

@@ -1,8 +1,10 @@
 'use client'
 import React from 'react'
 import './style.css'
+import'../globals.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import Cbutton from '../components/Cbutton'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import DarkNavBar from '../components/DarkNavBar'
@@ -21,12 +23,7 @@ const aboutUs = () => {
     <div className='hero-bg'>
       <div className='heroText-wrapper'>
         <h2>We believe in technology's<br/>transformative power, driving digital<br/>growth for our clients.</h2>
-        <div className='CTA-btt'>
-            <button>
-              <Link href={""} className='link'>OUR COMPANY PROFILE</Link>
-              < Image  src="/arrow-right-alt.svg" width={10} height={10} alt="arrow"/>
-            </button>
-        </div>
+        <Cbutton text="COMPANY PROFILE"></Cbutton>
       </div>
     </div>
     < Image  src='/Image.png' width={5000} height={500} alt='two-men'/>

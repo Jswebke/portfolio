@@ -17,3 +17,10 @@
 .arrow-alt{
     @apply hidden group-hover:block
 }
+.Button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 45px;
+}

@@ -10,11 +10,11 @@ body{
     width: 55vw;
     margin: auto;
 }
-.hero-text h2{
+.hero-text h1{
     color: #000;
     font-family: Lora;
     text-align: center;
-    font-size: clamp(2rem,2.0rem,40px);
+    font-size: clamp(3rem,5.3rem,40px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -90,15 +90,19 @@ body{
     margin-left: 30%;
     margin-right: 10%;
 }
-.site-rectangle button{
+.Rbutton{
     display: flex;
-    height: 45px;
-    padding: 0px 22px;
+    position: relative;
+    padding: 10px 15px;
     align-items: center;
     border: 2px solid #000;
     background: #F0F7F4;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
     margin-left: 30%;
-    margin-top: 40px;
+    margin-top: 5%;
+    width:max-content;
 }
 /* ---------------------site-wrapper-left----------- */
 .site-wrapper-left{
@@ -153,7 +157,7 @@ body{
     margin-right: 30%;
     margin-left: 10%;
 }
-.site-rectangle-left button{
+.Pbutton{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -165,6 +169,7 @@ body{
     margin-right: 30%;
     margin-left: 10%;
     margin-top: 40px;
+    width: max-content;
 }
 #wrapper-3{
     position: relative;
@@ -206,9 +211,14 @@ body{
         text-align: justify;
         margin-top: 25px;
     }
-    .site-rectangle button{
+    .site-rectangle .Rbutton{
         margin: auto;
         margin-top: 20px;
+        width:max-content;
+        top: 0;
+        left: 0;
+        right: 0;
+
     }
 
     
@@ -240,7 +250,7 @@ body{
         text-align: justify;
         margin-top: 25px;
     }
-    .site-rectangle-left button{
+    .site-rectangle-left .Pbutton{
         margin: auto;
         margin-top: 20px;
     }
@@ -263,7 +273,7 @@ body{
     .site-rectangle h3{
         margin-top: 20px;
     }
-    .site-rectangle button{
+    .site-rectangle .Rbutton{
         margin-top: 20px;
         margin-bottom: 25px;
     }
@@ -281,7 +291,7 @@ body{
 .site-rectangle-left h3{
     margin-top: 20px;
 }
-.site-rectangle-left button{
+.site-rectangle-left .Pbutton{
     margin-top: 20px;
     margin-bottom: 25px;
 }

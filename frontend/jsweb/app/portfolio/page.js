@@ -9,6 +9,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NavBarPage from '../components/NavBarPage'
 import Reveal from '../components/Reveal'
+import Cbutton from '../components/Cbutton'
+import Pbutton from '../components/Pbutton'
 
 const portfolio = () => {
   const [show, setShow] = useState(true)
@@ -27,13 +29,14 @@ const portfolio = () => {
 
       <DarkNavBar show={show} setShow={setShow}/>
       <div className='hero-text' >
-        <h2>Portfolio Projects</h2>
+        <h1>Portfolio Projects</h1>
         <p>We are good at building web apps that are use by millions of people and platforms that serve blossoming businesses.</p>
       </div>
       <div className='sites'>
         {/* ----------------site-wrapper-right-1---------------- */}
       <div className='site-wrapper'>
         <div className='site-mockup'>
+
           <Image 
             src={"/anon.png"}
             width={500}
@@ -44,21 +47,14 @@ const portfolio = () => {
             alt="anon-website"
           />
         </div>
-        <></>
        
         <div className='site-rectangle' data-aos="fade-up">
           <h3>Anon</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
-          <button>
-            Visit Anon 
-            <Image 
-            src={"/arrow-right-dark.svg"}
-            width={20}
-            height={20}
-            className='btt'
-            alt="arrow"
-            />
-          </button>
+
+          <Pbutton text={"Visit Anon"} Class="Rbutton" link="https://fredwebdesigneranddeveloper.on.drv.tw/Website/Shopping%20website/"></Pbutton>
+    
+
         </div>
       </div>
     
@@ -79,18 +75,7 @@ const portfolio = () => {
         <div className='site-rectangle-left' >
           <h2>Grilli</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
-          <button>
-            Visit Grilli
-            <Image 
-            src={"/arrow-right-dark.svg"}
-            width={20}
-            height={20}
-            className='btt'
-
-            alt='arrow'
-
-            />
-          </button>
+          <Pbutton text={"Visit Grilli"} Class="Pbutton" link="https://fredwebdesigneranddeveloper.on.drv.tw/Website/Grilli/"></Pbutton>
         </div>
       </div>
               {/* ----------------homeverse-site-wrapper-right-3---------------- */}
@@ -109,17 +94,7 @@ const portfolio = () => {
         <div className='site-rectangle'>
           <h3>Homeverse</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
-          <button>
-            Visit Homeverse
-            <Image 
-            src={"/arrow-right-dark.svg"}
-            width={20}
-            height={20}
-            className='btt'
-            alt='arrow'
-
-            />
-          </button>
+          <Pbutton text={"Visit Homeverse"} Class="Rbutton" link="https://fredwebdesigneranddeveloper.on.drv.tw/Website/Homeverse%20Real%20Estate/"></Pbutton>
         </div>
       </div>
     {/* ---------------------grilli-site-wrapper-left-4---------------- */}
@@ -139,16 +114,7 @@ const portfolio = () => {
         <div className='site-rectangle-left' >
           <h2>Gericht</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
-          <button>
-            Visit Gericht
-            <Image 
-            src={"/arrow-right-dark.svg"}
-            width={20}
-            height={20}
-            className='btt'
-            data-aos='flip-up'
-            />
-          </button>
+          <Pbutton text={"Visit Gericht"} Class="Pbutton" link="/"></Pbutton>
         </div>
       </div>
 
@@ -168,19 +134,7 @@ const portfolio = () => {
         <div className='site-rectangle'>
           <h3>Yukio's Booking</h3>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
-          <button>
-            Visit Yukio's
-            <Image 
-            src={"/arrow-right-dark.svg"}
-            width={20}
-            height={20}
-            className='btt'
-            data-aos='flip-up'
-            data-aos-duration = '1500'
-
-            alt='arrow'
-            />
-          </button>
+          <Pbutton text={"Visit Yukio"} Class="Rbutton" link="https://yukio-tours.vercel.app/"></Pbutton>
         </div>
       </div>
     {/* ---------------------sedo-site-wrapper-left-6---------------- */}
@@ -201,19 +155,7 @@ const portfolio = () => {
         <div className='site-rectangle-left'  >
           <h2>Sedo Logistics Limited</h2>
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
-          <button>
-            Visit Sedo
-            <Image 
-            src={"/arrow-right-dark.svg"}
-            width={20}
-            height={20}
-            className='btt'
-            data-aos='flip-up'
-            data-aos-duration = '1500'
-
-            alt='arrow'
-            />
-          </button>
+          <Pbutton text={"Visit Sedo"} Class="Pbutton" link="https://sedologistics.co.ke/"></Pbutton>
         </div>
       </div>
       </div>

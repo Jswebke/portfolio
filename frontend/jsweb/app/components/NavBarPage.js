@@ -71,7 +71,7 @@ function NavBarPage({show, setShow, page}) {
                     height={10}
                     className='aspect-auto ml-2'
                   />
-                  <p>+254 700 000 000</p>
+                  <p>+254 112 700 035</p>
                 </div>
               </Reveal>
               <Reveal delay={1.4}>
