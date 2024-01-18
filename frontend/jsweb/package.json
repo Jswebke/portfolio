@@ -13,9 +13,9 @@
     "aos": "^2.3.4",
     "framer-motion": "^10.16.16",
     "google-map-react": "^2.2.1",
-    "next": "^14.0.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "14.0.2",
+    "react": "^18",
+    "react-dom": "^18"
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
