@@ -307,6 +307,6 @@ export default function Home() {
       <Footer />
     </main>
   ) : (
-  <NavBarPage setShow={setShow} />
+  <NavBarPage setShow={setShow} page={'Home'} show={show}/>
   )
 }

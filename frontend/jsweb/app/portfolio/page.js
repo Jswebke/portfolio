@@ -224,7 +224,7 @@ const portfolio = () => {
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </>
-  ) : <NavBarPage show={show} setShow={setShow}/>
+  ) : <NavBarPage show={show} setShow={setShow} page={'Portfolio'}/>
 }
 
 export default portfolio

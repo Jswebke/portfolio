@@ -7,8 +7,8 @@ function Footer() {
     <footer className='bg-alt-bg xl:px-32 sm:px-16 px-6 flex flex-col py-28 space-y-6 justify-center text-alt-fg'>
         <p>Like what you see?</p>
         <Link href={'/contact'}>
-          <button className='flex flex-row space-x-3 items-center'>
-            <p className='font-medium text-5xl py-3 border-b-4 border-alt-fg'>Say Hello</p>
+          <button className='flex flex-row space-x-3 items-center group'>
+            <p className='font-medium text-5xl py-3 border-b-4 border-alt-fg group-hover:mr-6 group-hover:text-6xl ease-in duration-200'>Say Hello</p>
             <Image
                   src={'/arrow-right-alt.svg'}
                   alt='right arrow'
