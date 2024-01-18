@@ -4,7 +4,7 @@ import React from 'react'
 import NavBar from './NavBar'
 import Reveal from './Reveal'
 
-function NavBarPage({show, setShow}) {
+function NavBarPage({show, setShow, page}) {
   return (
     <main className='flex flex-col bg-alt-bg w-screen h-screen text-white justify-between pb-32'>
     <Reveal>
@@ -16,16 +16,32 @@ function NavBarPage({show, setShow}) {
           <i className='font-quattrocento text-2xl -rotate-90'>MENU</i>
         <div className='flex flex-col font-lora text-6xl space-y-8'>
           <Reveal delay={0.4}>
-            <Link href={'/'}>Home</Link>
+            <Link href={'/'} onClick={() => {
+              if (page === "Home"){
+                setShow(true)
+              }
+            }}>Home</Link>
           </Reveal>
           <Reveal delay={0.4}>
-            <Link href={'/portfolio'}>Work</Link>
+            <Link href={'/portfolio'} onClick={() => {
+              if (page === "Portfolio"){
+                setShow(!show)
+              }
+            }}>Work</Link>
           </Reveal>
           <Reveal delay={0.6}>
-            <Link href={'/about-us'}>About</Link>
+            <Link href={'/about-us'} onClick={() => {
+              if (page === "About"){
+                setShow(!show)
+              }
+            }}>About</Link>
           </Reveal>
           <Reveal delay={0.8}>
-            <Link href={'/contact'}>Contact</Link>
+            <Link href={'/contact'} onClick={() => {
+              if (page === "Contact"){
+                setShow(!show)
+              }
+            }}>Contact</Link>
           </Reveal>
         </div>
       </div>

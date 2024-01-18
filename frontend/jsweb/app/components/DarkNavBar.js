@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const DarkNavBar = ({show, setShow}) => {
     return (
-        <nav className='w-full py-4 absolute flex flex-row justify-between z-50 px-16 items-center text-white text-sm bg-black'>
+        <nav className='w-full py-1 flex flex-row justify-between z-50 px-16 items-center text-white text-sm bg-black'>
         <Link href={'/'} className='px-2'>
             <button>
                 <Image

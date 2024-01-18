@@ -57,7 +57,7 @@ const aboutUs = () => {
     </div>
     <Footer/>
     </>
-    )  : <NavBarPage setShow={setShow} />
+    )  : <NavBarPage setShow={setShow} page={'About'} show={show}/>
 }
 
 export default aboutUs
