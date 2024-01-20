@@ -124,10 +124,20 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp-mail.outlook.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'test@outlook.com'
-EMAIL_HOST_PASSWORD = 'hrcbzzfmjrpipxut' 
-DEFAULT_FROM_EMAIL = 'test@outlook.com'  
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp-mail.outlook.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'test@outlook.com'
+# EMAIL_HOST_PASSWORD = 'hrcbzzfmjrpipxut' 
+# DEFAULT_FROM_EMAIL = 'test@outlook.com'  
+
+
+EMAIL_PORT = 465
+EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_HOST_USER = 'dio@streetbarz.com' #Enter your email
+EMAIL_HOST_PASSWORD = 'password' #Enter your password
+DEFAULT_FROM_EMAIL = "dio@streetbarz.com" #Enter your email
+
