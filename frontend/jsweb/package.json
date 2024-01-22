@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",
+    "animate.css": "^4.1.1",
     "aos": "^2.3.4",
-    "framer-motion": "^10.16.16",
+    "axios": "^1.6.5",
+    "framer-motion": "^10.18.0",
     "google-map-react": "^2.2.1",
     "next": "14.0.2",
     "react": "^18",

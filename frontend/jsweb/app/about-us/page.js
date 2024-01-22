@@ -10,9 +10,33 @@ import Footer from '../components/Footer'
 import DarkNavBar from '../components/DarkNavBar'
 import { useState } from 'react'
 import NavBarPage from '../components/NavBarPage'
+import {motion, useAnimation, useInView} from "framer-motion"
 const aboutUs = () => {
   const [show, setShow] = useState(true)
+  const Imagevariants ={
+    initial:{
+      x:20,
+      opacity:0,
 
+  },
+    visible:{
+      x:0,
+      opacity:1,
+      transition:{
+        type:"spring",
+        delay:0.5,
+        yoyo:100
+        
+      }
+    },
+    hover:{
+      scale:[1.1,1,1.1],
+      transition:{
+        yoyo:Infinity
+      }
+
+    }
+  }
   return show ? (
     <>
     <title>About Us - J's Web: Our Story</title>
@@ -42,13 +66,23 @@ const aboutUs = () => {
         </div>
       </div>
       <div className='left-wrapper'>
+        <motion.div
+            // variants={Imagevariants}
+            initial={{opacity:0}}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+    
+            
+        >
         <Image 
           src="/Logo-removebg 1.png"
           width={500}
           height={450}
-          className='jsweblogo'
+          className='jsweblogo '
           alt='jsweb logo'
         />
+        </motion.div>
+  
         <p>J's Web drives traffic to your site through a comprehensive approach, utilizing Social Media Marketing (SMM), Omni-channeling, and effective SEO. We optimize your online presence for visibility, making it easy for potential customers to discover and engage with your website.</p>
       </div>
     </div>

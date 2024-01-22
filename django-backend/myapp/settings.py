@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Add your Next.js frontend URL here
+]
 
 # Application definition
 
@@ -38,12 +41,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'contact',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -137,7 +142,7 @@ EMAIL_PORT = 465
 EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
 EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.zoho.com'
-EMAIL_HOST_USER = 'dio@streetbarz.com' #Enter your email
-EMAIL_HOST_PASSWORD = 'password' #Enter your password
-DEFAULT_FROM_EMAIL = "dio@streetbarz.com" #Enter your email
+EMAIL_HOST_USER = 'jswebke@gmail.com' #Enter your email
+EMAIL_HOST_PASSWORD = 'Jsweb@2024' #Enter your password
+DEFAULT_FROM_EMAIL = "jswebke@gmail.com" #Enter your email
 

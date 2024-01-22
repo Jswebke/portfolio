@@ -31,8 +31,8 @@ class ContactMessageCreateView(generics.CreateAPIView):
         email = EmailMessage(
             subject='New Contact Form Submission',
             body=email_body,
-            from_email='your_zoho_email@yourdomain.com',  # Sender email address (your Zoho)
-            to=['recipient_email@example.com'],  # Recipient email address
+            from_email='jswebke@gmail.com',  # Sender email address (your Zoho)
+            to=['jswebke@gmail.com'],  # Recipient email address
             reply_to=[serializer.validated_data['email']],
             headers={'Content-Type': 'text/plain'},
         )

@@ -4,7 +4,7 @@ import NavBarPage from '../components/NavBarPage'
 import DarkNavBar from '../components/DarkNavBar'
 import Image from 'next/image'
 import Footer from '../components/Footer'
-
+import axios from 'axios'
 function page() {
     const [show, setShow] = useState(true)
 
@@ -69,5 +69,21 @@ function page() {
         </main>
     ) : <NavBarPage show={show} setShow={setShow} page={'Contact'}/>
 }
-
+const postData = async () => {
+    try {
+      const response = await axios.post('http://127.0.0.1:8000/api/contact/create/', {
+        // Your data to be sent in the request body
+        name: 'shawn owiro',
+        email: 'shawnowiro@gmail.com',
+        message:'testing'
+      });
+  
+      console.log('Response from Django:', response.data);
+    } catch (error) {
+      console.error('Error making POST request to Django:', error);
+    }
+  };
+  
+  // Call the function when needed
+  postData();
 export default page
