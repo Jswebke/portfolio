@@ -2,43 +2,32 @@
 import React, { useState } from 'react'
 import NavBarPage from '../components/NavBarPage'
 import DarkNavBar from '../components/DarkNavBar'
+import { useForm } from 'react-hook-form'
 import Image from 'next/image'
 import Footer from '../components/Footer'
 import axios from 'axios'
 function page() {
     const [show, setShow] = useState(true)
-    const[formData,setFormData] = useState({
-        CompanyName: '',
-        FullName: '',
-        PhoneNumber:'',
-        Email:''
-    })
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        console.log('Input change event:', name, value);
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    }
+    const[postErr, setPostErr] = useState()
+    const form = useForm()
+    const {register, handleSubmit, formState} = form
+    const {errors} = formState
     
-    const postData = async () => {
-        console.log(formData)
-        if (formData == '2'){
-            console.log(formData)
-        }
+    const postData = async (data) => {
         try {
             
             const response = await axios.post('http://127.0.0.1:8000/api/contact/create/', {
             // Your data to be sent in the request body
-            CompanyName:formData.CompanyName,
-            FullName:formData.FullName,
-            PhoneNumber:formData.PhoneNumber,
-            Email:formData.Email
+            CompanyName:data.companyName,
+            FullName:data.fullname,
+            PhoneNumber:data.phone,
+            Email: data.email
             });
             console.log('Response from Django:', response.data);
         } catch (error) {
             console.error('Error making POST request to Django:', error);
+            setPostErr(true)
+            alert('Internal error please try again later')
         }
 };
       // Call the function when needed
@@ -70,26 +59,87 @@ function page() {
                 <div className='flex flex-col space-y-6 items-start justify-start w-full lg:w-1/2'>
                     <h1 className='font-quattrocento font-medium text-[2.75rem] leading-[3.5rem]'>Hi. Tell us about your project</h1>
                         <p className=''>Fill in the form and send us an email</p>
-                    <div className="flex flex-col items-start justify-start space-y-4 w-full">                        <div className="flex flex-col space-y-2 items-start justify-start w-full">
+                    <form className="flex flex-col items-start justify-start space-y-4 w-full" onSubmit={handleSubmit(postData)}>
+                        <div className="flex flex-col space-y-2 items-start justify-start w-full">
                             <p className='font-normal'>Company name:</p>
-                            <input type="text" className='py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-[#44863F] bg-[#E8E8E6] ' placeholder='Company name' name='CompanyName' value={formData.CompanyName} onChange={handleInputChange} required={true} />
+                            <input type="text" 
+                            className={ (errors.companyName?.message) ? 'py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-red-600 bg-[#E8E8E6]' : 'py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-[#44863F] bg-[#E8E8E6]'}
+                            placeholder='Company name'
+                            {...register("companyName", {
+                                required: {
+                                    value: true,
+                                    message: 'This field is required'
+                                },
+                            })} />
+                            <p className='text-red-600 text-xs'>{errors.phone?.message}</p>
                         </div>
                         <div className="flex flex-col space-y-2 items-start justify-start w-full">
                             <p className='font-normal'>Full name:</p>
-                            <input type="text" className='py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-[#44863F] bg-[#E8E8E6]' placeholder='Full name' name = 'FullName' value={formData.FullName} onChange={handleInputChange} required={true}/>
+                            <input type="text"
+                            className={ (errors.fullname?.message) ? 'py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-red-600 bg-[#E8E8E6]' : 'py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-[#44863F] bg-[#E8E8E6]'}
+                            placeholder='Full name'
+                            {
+                                ...register("fullname", {
+                                    required: {
+                                        value: true,
+                                        message: 'This field is required'
+                                    },
+                                })
+                            }/>
+                            <p className='text-red-600 text-xs'>{errors.phone?.message}</p>
                         </div>
                         <div className="flex flex-col space-y-2 items-start justify-start w-full">
                             <p className='font-normal'>Phone number:</p>
-                            <input type="text" className='py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-[#44863F] bg-[#E8E8E6]' placeholder='Phone number' name = 'PhoneNumber' value={formData.PhoneNumber} onChange={handleInputChange} required={true}/>
+                            <input 
+                            type="text" 
+                            className={ (errors.phone?.message) ? 'py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-red-600 bg-[#E8E8E6]' : 'py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-[#44863F] bg-[#E8E8E6]'}
+                            placeholder='Phone number' 
+                            {
+                                ...register("phone", {
+                                    required: {
+                                        value: true,
+                                        message: 'This field is required'
+                                    },
+                                    minLength: {
+                                        value: 7,
+                                        message: 'Invalid phone format 254 712345678'
+                                    },
+                                    maxLength: {
+                                        value: 15,
+                                        message: 'Invalid phone format 254 712345678'                                        
+                                    },
+                                    pattern: {
+                                        value: /[0-9]/,
+                                        message: 'Invalid phone format enter numbers',
+                                      }
+                                })
+                                }/>
+                                <p className='text-red-600 text-xs'>{errors.phone?.message}</p>
                         </div>
                         <div className="flex flex-col space-y-2 items-start justify-start w-full">
                             <p className='font-normal'>Email address:</p>
-                            <input type="text" className='py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-[#44863F] bg-[#E8E8E6]' placeholder='Email address' name='Email' value={formData.Email} onChange={handleInputChange}required={true}  />
+                            <input type="text"
+                            className={ (errors.email?.message) ? 'py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-red-600 bg-[#E8E8E6]' : 'py-3 px-2 w-full rounded-none focus:bg-gray-50 focus:outline-[#44863F] bg-[#E8E8E6]'}
+                            placeholder='Email address'
+                            {
+                                ...register("email",
+                                {
+                                    required: {
+                                        value: true,
+                                        message: 'This field is required'
+                                    },
+                                    pattern: {
+                                        value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                        message: 'Invalid email format',
+                                      }
+                                } )
+                            }  />
+                            <p className='text-red-600 text-xs'>{errors.email?.message}</p>
                         </div>
-                        <button className='bg-white font-medium space-x-2 border-black border-2 w-full py-2 px-6 flex flex-row items-center justify-center hover:bg-black hover:text-white hover:bg-opacity-100 ease-in duration-200' onClick={postData}>
+                        <button type={'submit'} className='bg-white font-medium space-x-2 border-black border-2 w-full py-2 px-6 flex flex-row items-center justify-center hover:bg-black hover:text-white hover:bg-opacity-100 ease-in duration-200'>
                             <p>SUBMIT</p>
                         </button>
-                    </div>
+                    </form>
                 </div>
             </section>
             <Footer />
