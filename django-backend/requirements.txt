@@ -5,6 +5,5 @@ django-rest==0.8.7
 django-smtp-ssl==1.0
 djangorestframework==3.14.0
 pytz==2023.3.post1
-six==1.16.0
 sqlparse==0.4.4
-tzdata==2023.4
+typing_extensions==4.8.0
