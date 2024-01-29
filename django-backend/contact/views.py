@@ -27,13 +27,13 @@ class ContactMessageCreateView(generics.CreateAPIView):
         #     auth_password='nooatzrioalrtwip',  #The app password you generated
         # )
         
-        email_body = f"Name: {serializer.validated_data['name']}\nEmail: {serializer.validated_data['email']}\nMessage: {serializer.validated_data['message']}"
+        email_body = f"CompanyName: {serializer.validated_data['CompanyName']}\n FullName:{serializer.validated_data['FullName']}\n PhoneNumber:{serializer.validated_data['PhoneNumber']}\n Email: {serializer.validated_data['Email']}"
         email = EmailMessage(
             subject='New Contact Form Submission',
             body=email_body,
             from_email='jswebke@gmail.com',  # Sender email address (your Zoho)
             to=['jswebke@gmail.com'],  # Recipient email address
-            reply_to=[serializer.validated_data['email']],
+            reply_to=[serializer.validated_data['Email']],
             headers={'Content-Type': 'text/plain'},
         )
         email.send()
