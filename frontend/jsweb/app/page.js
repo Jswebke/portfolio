@@ -48,7 +48,7 @@ export default function Home() {
           {/* ---------------------------------contact us call to action------------------------------ */}
           <Reveal delay={0.2}>
             <Link href={"/contact"} className='flex flex-row space-x-2 text-sm btn-light group '>
-              <p className='text-n'>CONTACT US</p>
+              <p className='text-white'>CONTACT US</p>
               <Image
               src={"/arrow-right.svg"}
               alt='arrow'
