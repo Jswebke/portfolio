@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import NavBarPage from '../components/NavBarPage'
 import DarkNavBar from '../components/DarkNavBar'
+import {toast, ToastContainer} from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css"; 
 import { useForm } from 'react-hook-form'
 import Image from 'next/image'
 import Footer from '../components/Footer'
@@ -16,19 +18,24 @@ function page() {
     const postData = async (data) => {
         try {
             
-            const response = await axios.post('http://127.0.0.1:8000/api/contact/create/', {
+            const response = axios.post('http://127.0.0.1:8000/api/contact/create/', {
             // Your data to be sent in the request body
             CompanyName:data.companyName,
             FullName:data.fullname,
             PhoneNumber:data.phone,
             Email: data.email
             });
+            toast.promise(response,{
+                pending: 'Submitting your details',
+                success: 'Success',
+                error: 'An error occured try again',
+            })
+            
             console.log('Response from Django:', response.data);
         } catch (error) {
             console.error('Error making POST request to Django:', error);
-            setPostErr(true)
-            alert('Internal error please try again later')
         }
+        
 };
       // Call the function when needed
 
@@ -142,6 +149,19 @@ function page() {
                     </form>
                 </div>
             </section>
+            <ToastContainer
+                position="bottom-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                theme='dark'
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                transition= 'Bounce'
+                />
             <Footer />
         </main>
     ) : <NavBarPage show={show} setShow={setShow} page={'Contact'}/>
