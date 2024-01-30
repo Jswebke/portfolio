@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /* margin-top:45px auto; */
+    margin: 70px auto;
+    border: 1px solid #fff;
+    width: 18dvw;
+    font-family: calibri;
+    font-weight: 300;
+    font-size: clamp(0.8rem,2vw,1rem);
+}
+.button img{
+    margin-left: 10px;
+}

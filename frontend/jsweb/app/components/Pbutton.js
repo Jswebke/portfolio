@@ -7,7 +7,7 @@ const Pbutton = ({text,Class,link}) => {
   return (
     <>
               <div className=''>
-              <Link href={link} className={`${Class} hover:bg-black hover:text-white hover:bg-opacity-100 ease-in duration-200 group `}>
+              <Link href={link} className={`${Class} hover:bg-black hover:text-white hover:bg-opacity-100 ease-in duration-200 group `} target='_blank'>
               {text}
               <Image
               src={"/arrow-right-dark.svg"}

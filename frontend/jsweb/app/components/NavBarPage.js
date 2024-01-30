@@ -89,7 +89,7 @@ function NavBarPage({show, setShow, page}) {
             </div>
             <div className='flex flex-row items-center justify-between px-16 w-full md:px-0 md:w-fit md:justify-end md:space-x-10'>
               <Reveal delay={1.4}>
-                <a href={'https://www.instagram.com'} target='_blank'>
+                <a href={'https://www.instagram.com/jswebke/'} target='_blank'>
                   <button>
                     <Image 
                       src={'/insta-icon.svg'}
@@ -102,7 +102,7 @@ function NavBarPage({show, setShow, page}) {
                 </a>
               </Reveal>
               <Reveal delay={1.3}>
-                <a href={'https://www.facebook.com'} target='_blank'>
+                <a href={'https://www.facebook.com/profile.php?id=61555893321375'} target='_blank'>
                   <button>
                     <Image 
                       src={'/facebook-icon.svg'}
@@ -115,7 +115,7 @@ function NavBarPage({show, setShow, page}) {
                 </a>
               </Reveal>
               <Reveal delay={1.2}>
-                <a href={'https://www.linkedin.com/'} target='_blank'>
+                <a href={'https://www.linkedin.com/company/101399999/admin/feed/posts/'} target='_blank'>
                   <button>
                     <Image 
                       src={'/linked-in-icon.svg'}
@@ -128,7 +128,7 @@ function NavBarPage({show, setShow, page}) {
                 </a>
               </Reveal>
               <Reveal>
-                <a href={'https://www.github.com/'} target='_blank'>
+                <a href={'https://github.com/Jswebke'} target='_blank'>
                   <button>
                     <Image 
                       src={'/github-icon.svg'}

@@ -92,8 +92,8 @@ export default function Home() {
             <div className="flex flex-col space-y-4 lg:w-2/4 w-full">
               <h3 className='text-3xl font-quattrocento font-semibold'>Anon</h3>
               <p className='text-2xl'>Ecommerce website</p>
-              <p>This is a template text that is just meant to be used as a place holder text . J’s Web is a team of creatives and seasoned sales experts dedicated to deliver tangible business benefits to enterprises.</p>
-              <Link href={'https://fredwebdesigneranddeveloper.on.drv.tw/Website/Shopping%20website/'} className='group'>
+              <p>Transform your dreams into a successful online store with our customized e-commerce websites.</p>
+              <Link href={'https://anon-eight.vercel.app/'} className='group' target='_blank'>
                 <button className='flex flex-row space-x-2 items-center btn'>
                   <p>Visit Anon</p>
                   <Image 
@@ -129,8 +129,8 @@ export default function Home() {
               <div className="flex flex-col space-y-4 lg:w-2/4 w-full">
                 <h3 className='text-3xl font-quattrocento font-semibold'>Homeverse</h3>
                 <p className='text-2xl'>Real Estate website</p>
-                <p>This is a template text that is just meant to be used as a place holder text . J’s Web is a team of creatives and seasoned sales experts dedicated to deliver tangible business benefits to enterprises.</p>
-                <Link href={'https://fredwebdesigneranddeveloper.on.drv.tw/Website/Homeverse%20Real%20Estate/'}>
+                <p>Make it easier for your clients to explore properties with our comprehensive real estate website. </p>
+                <Link href={'https://homeverse-seven.vercel.app/'} target='_blank'>
                   <button className='flex flex-row space-x-2 items-center btn group'>
                     <p>Visit Homeverse</p>
                     <Image 
@@ -166,8 +166,8 @@ export default function Home() {
             <div className="flex flex-col space-y-4 lg:w-2/4 w-full">
               <h3 className='text-3xl font-quattrocento font-semibold'>Grilli</h3>
               <p className='text-2xl'>Restuarant website</p>
-              <p>This is a template text that is just meant to be used as a place holder text . J’s Web is a team of creatives and seasoned sales experts dedicated to deliver tangible business benefits to enterprises.</p>
-              <Link href={'https://fredwebdesigneranddeveloper.on.drv.tw/Website/Grilli/'}>
+              <p>Establish a digital home for your restaurant, where potential customers can learn all about you with just a click.</p>
+              <Link href={'https://grilli-lovat.vercel.app/'} target='_blank'>
                 <button className='flex flex-row space-x-2 items-center btn group'>
                   <p>Visit Grilli</p>
                   <Image 
