@@ -52,7 +52,7 @@ const aboutUs = () => {
       <div className='heroText-wrapper'>
         <h2>ABOUT US</h2>
         <p>J’s Web is a web development agency <br/>that believes in transformative power of digital growth to create real business value for our clients.</p>
-        <Cbutton text="COMPANY PROFILE" link={"https://drive.google.com/file/d/1j57mqzj9lAmOBnMxG6WJB4jOFPGNpW6h/view?usp=drivesdk"}></Cbutton>
+        <Cbutton  text="COMPANY PROFILE" link={"https://drive.google.com/file/d/1j57mqzj9lAmOBnMxG6WJB4jOFPGNpW6h/view?usp=drivesdk"}></Cbutton>
       </div>
     </div>
 
