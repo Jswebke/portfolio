@@ -50,9 +50,9 @@ const portfolio = () => {
        
         <div className='site-rectangle' data-aos="fade-up">
           <h3>Anon</h3>
-          <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
+          <p>Transform your dreams into a successful online store with our customized e-commerce websites.</p>
 
-          <Pbutton text={"Visit Anon"} Class="Rbutton" link="https://fredwebdesigneranddeveloper.on.drv.tw/Website/Shopping%20website/"></Pbutton>
+          <Pbutton text={"Visit Anon"} Class="Rbutton" link="https://anon-eight.vercel.app/"></Pbutton>
     
 
         </div>
@@ -74,8 +74,8 @@ const portfolio = () => {
         </div>
         <div className='site-rectangle-left' >
           <h2>Grilli</h2>
-          <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
-          <Pbutton text={"Visit Grilli"} Class="Pbutton" link="https://fredwebdesigneranddeveloper.on.drv.tw/Website/Grilli/"></Pbutton>
+          <p>Establish a digital home for your restaurant, where potential customers can learn all about you with just a click.</p>
+          <Pbutton text={"Visit Grilli"} Class="Pbutton" link="https://grilli-lovat.vercel.app/"></Pbutton>
         </div>
       </div>
               {/* ----------------homeverse-site-wrapper-right-3---------------- */}
@@ -93,12 +93,12 @@ const portfolio = () => {
         </div>
         <div className='site-rectangle'>
           <h3>Homeverse</h3>
-          <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
-          <Pbutton text={"Visit Homeverse"} Class="Rbutton" link="https://fredwebdesigneranddeveloper.on.drv.tw/Website/Homeverse%20Real%20Estate/"></Pbutton>
+          <p>Make it easier for your clients to explore properties with our comprehensive real estate website. </p>
+          <Pbutton text={"Visit Homeverse"} Class="Rbutton" link="https://homeverse-seven.vercel.app/"></Pbutton>
         </div>
       </div>
-    {/* ---------------------grilli-site-wrapper-left-4---------------- */}
-    <div className='site-wrapper-left'>
+    {/* ---------------------gericht-site-wrapper-left-4---------------- */}
+    {/* <div className='site-wrapper-left'>
         <div className='site-mockup-left'>
           <Image 
             src={"/grilli.png"}
@@ -116,7 +116,7 @@ const portfolio = () => {
           <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
           <Pbutton text={"Visit Gericht"} Class="Pbutton" link="/"></Pbutton>
         </div>
-      </div>
+      </div> */}
 
       {/* ----------------yukio-site-wrapper-right-5---------------- */}
     <div className='site-wrapper'>
@@ -133,7 +133,7 @@ const portfolio = () => {
         </div>
         <div className='site-rectangle'>
           <h3>Yukio's Booking</h3>
-          <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
+          <p>We simplify things, whether it's an online booking platform or something more complex.</p>
           <Pbutton text={"Visit Yukio"} Class="Rbutton" link="https://yukio-tours.vercel.app/"></Pbutton>
         </div>
       </div>
@@ -154,7 +154,7 @@ const portfolio = () => {
         </div>
         <div className='site-rectangle-left'  >
           <h2>Sedo Logistics Limited</h2>
-          <p>Your online fashion haven, celebrates the essence of women with a curated collection, empowering choices, easy browsing, secure transactions and timely deliveries.</p>
+          <p>Looking for a versatile website? We've got you covered!</p>
           <Pbutton text={"Visit Sedo"} Class="Pbutton" link="https://sedologistics.co.ke/"></Pbutton>
         </div>
       </div>

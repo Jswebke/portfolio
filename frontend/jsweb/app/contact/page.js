@@ -5,6 +5,8 @@ import DarkNavBar from '../components/DarkNavBar'
 import { useForm } from 'react-hook-form'
 import Image from 'next/image'
 import Footer from '../components/Footer'
+import {motion, useAnimation, useInView} from "framer-motion"
+
 import axios from 'axios'
 function page() {
     const [show, setShow] = useState(true)
@@ -111,7 +113,7 @@ function page() {
                                     pattern: {
                                         value: /[0-9]/,
                                         message: 'Invalid phone format enter numbers',
-                                      }
+                                        }
                                 })
                                 }/>
                                 <p className='text-red-600 text-xs'>{errors.phone?.message}</p>
@@ -131,14 +133,19 @@ function page() {
                                     pattern: {
                                         value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                                         message: 'Invalid email format',
-                                      }
+                                        }
                                 } )
                             }  />
                             <p className='text-red-600 text-xs'>{errors.email?.message}</p>
                         </div>
-                        <button type={'submit'} className='bg-white font-medium space-x-2 border-black border-2 w-full py-2 px-6 flex flex-row items-center justify-center hover:bg-black hover:text-white hover:bg-opacity-100 ease-in duration-200'>
+                        <motion.button type={'submit'} className='bg-white font-medium space-x-2 border-black border-2 w-full py-2 px-6 flex flex-row items-center justify-center hover:bg-black hover:text-white hover:bg-opacity-100 ease-in duration-200'
+                            whileTap={{scale:1.5}}
+                            duration={0.2}
+                            transition={"easInOut"}
+                        
+                            >
                             <p>SUBMIT</p>
-                        </button>
+                        </motion.button>
                     </form>
                 </div>
             </section>

@@ -44,13 +44,17 @@ const aboutUs = () => {
     <DarkNavBar show={show} setShow={setShow}/>
 
     {/* --------------------hero section--------------------- */}
+    <div className='hero-vid'>
+      <video src='/abtpage.webm' className='bg-vid'loop autoPlay muted></video>
+    </div>
     <div className='hero-bg'>
+      
       <div className='heroText-wrapper'>
-        <h2>We believe in technology's<br/>transformative power, driving digital<br/>growth for our clients.</h2>
-        <Cbutton text="COMPANY PROFILE"></Cbutton>
+        <h2>ABOUT US</h2>
+        <p>J’s Web is a web development agency <br/>that believes in transformative power of digital growth to create real business value for our clients.</p>
+        <Cbutton text="COMPANY PROFILE" link={"https://drive.google.com/file/d/1j57mqzj9lAmOBnMxG6WJB4jOFPGNpW6h/view?usp=drivesdk"}></Cbutton>
       </div>
     </div>
-    < Image  src='/Image.png' width={5000} height={500} alt='two-men'/>
 
     {/* ------------------------our story section--------------- */}
     <div className='ourStory-wrapper'>
@@ -66,14 +70,7 @@ const aboutUs = () => {
         </div>
       </div>
       <div className='left-wrapper'>
-        <motion.div
-            // variants={Imagevariants}
-            initial={{opacity:0}}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-    
-            
-        >
+
         <Image 
           src="/Logo-removebg 1.png"
           width={500}
@@ -81,7 +78,6 @@ const aboutUs = () => {
           className='jsweblogo '
           alt='jsweb logo'
         />
-        </motion.div>
   
         <p>J's Web drives traffic to your site through a comprehensive approach, utilizing Social Media Marketing (SMM), Omni-channeling, and effective SEO. We optimize your online presence for visibility, making it easy for potential customers to discover and engage with your website.</p>
       </div>
