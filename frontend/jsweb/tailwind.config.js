@@ -24,6 +24,9 @@ module.exports = {
         lora: 'var(--font-lora)',
         quattrocento: 'var(--font-quattrocento)',
         inter: 'var(--font-inter)',
+        poppins: 'var(--font-poppins)',
+        poppinslight: 'var(--font-poppinsLight)',
+        roboto: 'var(--font-roboto)',
       }
     },
   },

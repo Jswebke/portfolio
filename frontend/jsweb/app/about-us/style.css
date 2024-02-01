@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -42,27 +43,29 @@
     top: 30px;
     width:70% ;
 }
-.heroText-wrapper h2{
+.heroText-wrapper h1{
     position: relative;
     top: 2dvh;
     color: #ffffff;
     text-align: center;
     margin-top: 40px;
     margin: auto;
-    font-family: Lora;
     font-size: clamp(1.72rem,4.0vw,3.75rem);
     font-style: normal;
-    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     line-height: normal;
     
 }
 .heroText-wrapper p{
     color: #FFF;
     position: relative;
-    top:6.5dvh;
+    top:6.0dvh;
     text-align: center;
-    font-family: calibri;
-    font-size: clamp(1em,1.3em,3.3em);
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: clamp(0.8em,1.0em,2.3em);
     font-style: normal;
     font-weight: 100;
     line-height: normal;
@@ -145,14 +148,14 @@
     width: 155px;
     height: 2.8px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: #000;
     align-self: safe;
 
 }
 .right-wrapper h2{
     color: #000;
-    font-family: Lora;
+    font-family: "Poppins", sans-serif;
     font-size: clamp(3rem,8vw,20rem);
     font-style: normal;
     font-weight: 400;
@@ -174,13 +177,13 @@
 }
 .right-wrapper p{
     color: #000;
-    font-family: calibri;
+    font-family: "Roboto", sans-serif;
     font-size: clamp(1em,1.3em,3.3em);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     text-align: start;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 10px;
 }
 
@@ -202,10 +205,10 @@
 }
 .left-wrapper p{
     color: #000;
-    font-family: calibri;
+    font-family: "Roboto", sans-serif;
     font-size: clamp(0.8em,1.3em,3.3em);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     position: relative;
     top: 25%;

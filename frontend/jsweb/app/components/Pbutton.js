@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import '../globals.css'
-import '../portfolio/style.css'
+// import '../portfolio/style.css'
 const Pbutton = ({text,Class,link}) => {
   return (
     <>

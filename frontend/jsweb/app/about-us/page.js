@@ -39,6 +39,9 @@ const aboutUs = () => {
   }
   return show ? (
     <>
+    <Link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <Link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
     <title>About Us - J's Web: Our Story</title>
     <meta name="description" content="Discover J's story, team crafting exceptional web experiences."></meta>
     <DarkNavBar show={show} setShow={setShow}/>
@@ -50,7 +53,7 @@ const aboutUs = () => {
     <div className='hero-bg'>
       
       <div className='heroText-wrapper'>
-        <h2>ABOUT US</h2>
+        <h1>ABOUT US</h1>
         <p>J’s Web is a web development agency <br/>that believes in transformative power of digital growth to create real business value for our clients.</p>
         <Cbutton  text="COMPANY PROFILE" link={"https://drive.google.com/file/d/1j57mqzj9lAmOBnMxG6WJB4jOFPGNpW6h/view?usp=drivesdk"}></Cbutton>
       </div>

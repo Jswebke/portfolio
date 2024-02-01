@@ -48,7 +48,7 @@ function page() {
             <DarkNavBar show={show} setShow={setShow}/>
             <section className='w-full h-[90vh] pl-12 z-0 lg:px-32 flex flex-col justify-center items-start overflow-x-hidden'>
                 <div className='flex flex-col items-start justify-center space-y-4'>
-                    <p className='md:text-8xl text-7xl font-quattrocento font-medium z-20'>Let's<br />work<br />together</p>
+                    <p className='md:text-8xl text-7xl font-poppins font-medium z-20'>Let's<br />work<br />together</p>
                     <p className='text-lg z-20'>"Passion is what brought us here"</p>
                     <a href='#Form' className='bg-opacity-100 bg-black border text-white border-black px-6 py-2 hover:bg-white hover:text-black ease-in duration-200' >
                         CONTACT US
@@ -66,7 +66,7 @@ function page() {
             </section>
             <section className='flex flex-row pl-12 justify-between items-center bg-white lg:pl-32 pr-16 w-full py-12 ' id='Form'>
                 <div className='flex flex-col space-y-6 items-start justify-start w-full lg:w-1/2'>
-                    <h1 className='font-quattrocento font-medium text-[2.75rem] leading-[3.5rem]'>Hi. Tell us about your project</h1>
+                    <h1 className='font-poppins font-medium text-[2.75rem] leading-[3.5rem]'>Hi. Tell us about your project</h1>
                         <p className=''>Fill in the form and send us an email</p>
                     <form className="flex flex-col items-start justify-start space-y-4 w-full" onSubmit={handleSubmit(postData)}>
                         <div className="flex flex-col space-y-2 items-start justify-start w-full">

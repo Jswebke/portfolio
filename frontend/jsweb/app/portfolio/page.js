@@ -29,7 +29,7 @@ const portfolio = () => {
 
       <DarkNavBar show={show} setShow={setShow}/>
       <div className='hero-text' >
-        <h1>Portfolio Projects</h1>
+        <h1>OUR PROJECTS</h1>
         <p>We are good at building web apps that are use by millions of people and platforms that serve blossoming businesses.</p>
       </div>
       <div className='sites'>
@@ -119,8 +119,8 @@ const portfolio = () => {
       </div> */}
 
       {/* ----------------yukio-site-wrapper-right-5---------------- */}
-    <div className='site-wrapper'>
-        <div className='site-mockup'>
+    <div className='site-wrapper-left'>
+        <div className='site-mockup-left'>
           <Image 
             src={"/yukio.png"}
             width={500}
@@ -131,15 +131,15 @@ const portfolio = () => {
             alt="yukio-website"
           />
         </div>
-        <div className='site-rectangle'>
-          <h3>Yukio's Booking</h3>
+        <div className='site-rectangle-left'>
+          <h2>Yukio's Booking</h2>
           <p>We simplify things, whether it's an online booking platform or something more complex.</p>
-          <Pbutton text={"Visit Yukio"} Class="Rbutton" link="https://yukio-tours.vercel.app/"></Pbutton>
+          <Pbutton text={"Visit Yukio"} Class="Pbutton" link="https://yukio-tours.vercel.app/"></Pbutton>
         </div>
       </div>
     {/* ---------------------sedo-site-wrapper-left-6---------------- */}
-    <div className='site-wrapper-left' id='last-site'>
-        <div className='site-mockup-left'>
+    <div className='site-wrapper' id='last-site'>
+        <div className='site-mockup'>
           <Image 
             src={"/sedo.png"}
             width={500}
@@ -152,10 +152,10 @@ const portfolio = () => {
 
           />
         </div>
-        <div className='site-rectangle-left'  >
-          <h2>Sedo Logistics Limited</h2>
+        <div className='site-rectangle'  >
+          <h3>Sedo Logistics Limited</h3>
           <p>Looking for a versatile website? We've got you covered!</p>
-          <Pbutton text={"Visit Sedo"} Class="Pbutton" link="https://sedologistics.co.ke/"></Pbutton>
+          <Pbutton text={"Visit Sedo"} Class="Rbutton" link="https://sedologistics.co.ke/"></Pbutton>
         </div>
       </div>
       </div>
