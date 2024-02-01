@@ -11,41 +11,19 @@ import DarkNavBar from '../components/DarkNavBar'
 import { useState } from 'react'
 import NavBarPage from '../components/NavBarPage'
 import {motion, useAnimation, useInView} from "framer-motion"
+import { Inter, Lora, Quattrocento, Poppins, Roboto } from 'next/font/google'
+const roboto = Roboto({subsets: ['latin'], weight:'300', variable: '--font-roboto'})
+
+
 const aboutUs = () => {
   const [show, setShow] = useState(true)
-  const Imagevariants ={
-    initial:{
-      x:20,
-      opacity:0,
 
-  },
-    visible:{
-      x:0,
-      opacity:1,
-      transition:{
-        type:"spring",
-        delay:0.5,
-        yoyo:100
-        
-      }
-    },
-    hover:{
-      scale:[1.1,1,1.1],
-      transition:{
-        yoyo:Infinity
-      }
-
-    }
-  }
   return show ? (
     <>
 
     <title>About Us - J's Web: Our Story</title>
     <meta name="description" content="Discover J's story, team crafting exceptional web experiences."></meta>
-    <Link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-    <Link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"></Link>
-    <Link rel="icon" href="./logo.svg" type="image/x-icon" />
-    <Link rel="preconnect" href="https://fonts.googleapis.com"/>
+
     <DarkNavBar show={show} setShow={setShow}/>
 
     {/* --------------------hero section--------------------- */}
@@ -56,8 +34,8 @@ const aboutUs = () => {
       
       <div className='heroText-wrapper'>
         <h1>ABOUT US</h1>
-        <p>J’s Web is a web development agency <br/>that believes in transformative power of digital growth to create real business value for our clients.</p>
-        <Cbutton  text="COMPANY PROFILE" link={"https://drive.google.com/file/d/1j57mqzj9lAmOBnMxG6WJB4jOFPGNpW6h/view?usp=drivesdk"}></Cbutton>
+        <p className='font-roboto'>J’s Web is a web development agency <br/>that believes in transformative power of digital growth to create real business value for our clients.</p>
+        <Cbutton  text="Company Profile" link={"https://drive.google.com/file/d/1j57mqzj9lAmOBnMxG6WJB4jOFPGNpW6h/view?usp=drivesdk"}></Cbutton>
       </div>
     </div>
 
