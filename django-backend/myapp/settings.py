@@ -148,11 +148,11 @@ EMAIL_HOST_USER = 'jswebke@gmail.com' #Enter your email
 EMAIL_HOST_PASSWORD = 'Jsweb@2024' #Enter your password
 DEFAULT_FROM_EMAIL = "jswebke@gmail.com" #Enter your email
 #env var
-env= environ.Env()
+# env= environ.Env()
 
 environ.Env.read_env()
 #postgres database set up
-DATABASES = {
-    'default' : dj_database_url.parse(env('DATABASE_URL'))
+# DATABASES = {
+#     'default' : dj_database_url.parse(env('DATABASE_URL'))
 
-}
+# }
