@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -75,7 +75,7 @@ body{
 
     font-size: clamp(35px,50%,40px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     margin: auto;
     text-align: start;
@@ -99,8 +99,9 @@ body{
     position: relative;
     padding: 10px 15px;
     align-items: center;
-    border: 1.5px solid #000;
-    border-radius: 5px;
+    border: 1px solid #000;
+    font-weight: 300;
+    border-radius: 2px;
     background: #F0F7F4;
     flex-direction: row;
     justify-content: center;
@@ -144,7 +145,7 @@ body{
 
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     margin: auto;
     text-align: start;
@@ -166,13 +167,14 @@ body{
 .Pbutton{
     display: flex;
     font-family: "Poppins", sans-serif;
+    font-weight: 300;
     flex-direction: row;
     justify-content: center;
     height: 45px;
     padding: 0px 22px;
     align-items: center;
-    border: 1.5px solid #000;
-    border-radius: 5px;
+    border: 1px solid #000;
+    border-radius: 2px;
     background: #F0F7F4;
     margin-right: 30%;
     margin-left: 10%;
