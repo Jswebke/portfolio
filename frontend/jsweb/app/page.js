@@ -20,7 +20,7 @@ export default function Home() {
       <meta name="description" content="An web design agency that creates real business value"></meta>
       {/* ----------blob video------------- */}
       <video src='/hero-video.mp4' loop autoPlay muted
-      className='absolute hidden md:block w-screen h-screen object-fit z-10 bg-black' />
+      className='absolute hidden md:block w-screen h-screen object-fit z-10 bg-black pl-10 ' />
       {/*----------Navbar---------*/} 
       <NavBar setShow={setShow} show={show}/>  
       {/* --------------Hero Section--------------------- */}
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="h-screen flex flex-col items-start justify-center text-white md:w-3/4 w-full space-y-12">
           {/* --------------------creating real value h1 --------------------- */}
           <Reveal duration={0.5}>  
-          <h1 className='font-poppins lg:text-6xl lg:leading-[5rem] text-5xl w-full -mb-12 md:-mb-24'>
+          <h1 className='font-poppins lg:text-6xl lg:leading-[5rem] text-3xl w-full -mb-12 md:-mb-24'>
               Creating Real Business <Typewriter // Added animation of the words "value" and "brands" using typewriter effect (Change the margin bottom to fit the text well and the size*)
               options={{
                 strings: [
