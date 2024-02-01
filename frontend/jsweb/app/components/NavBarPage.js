@@ -6,15 +6,15 @@ import Reveal from './Reveal'
 
 function NavBarPage({show, setShow, page}) {
   return (
-    <main className='flex flex-col bg-alt-bg w-screen h-screen text-white justify-between pb-32'>
+    <main className='flex flex-col bg-alt-bg w-screen h-screen text-white font-poppinslight justify-between pb-32'>
     <Reveal>
       <NavBar setShow={setShow} show={show} />
     </Reveal>
     <Reveal delay={0.2}>
       <div className='flex flex-row items-start justify-center pt-36
       md:pl-48 md:justify-normal'>
-          <i className='font-quattrocento text-2xl -rotate-90'>MENU</i>
-        <div className='flex flex-col font-lora text-6xl space-y-8'>
+          <i className='font-poppins text-2xl -rotate-90'>MENU</i>
+        <div className='flex flex-col font-poppins text-6xl space-y-8'>
           <Reveal delay={0.4}>
             <Link href={'/'} onClick={() => {
               if (page === "Home"){
@@ -51,39 +51,39 @@ function NavBarPage({show, setShow, page}) {
       md:flex-row md:space-y-0 md:px-12
       lg:px-28
       xl:px-32 '>
-            <div className="flex flex-col px-16 space-y-4 md:px-0 md:space-y-0 self-start md:self-auto md:flex-row md:items-center md:justify-start md:space-x-4">
-              <div className="flex flex-row items-center justify-center text-sm space-x-2">
-                <Image
+            <div className="flex flex-col px-16 space-y-4 md:px-0 md:space-y-0 self-start md:self-auto md:flex-row md:items-center md:justify-start md:space-x-6">
+              <div className="flex flex-row items-center justify-center text-base space-x-2">
+                {/* <Image
                   src={'/tiny-map.svg'}
                   alt='map icon'
                   width={20}
                   height={10}
                   className='aspect-auto'
-                />
-                <p>Nairobi, Kenya</p>
+                /> */}
+                  <p>+254 112 700 035</p>
               </div>
               <Reveal delay={1.2}>
-                <div className="flex flex-row items-center justify-center text-sm space-x-2">
-                  <Image 
+                <div className="flex flex-row items-center justify-center text-base space-x-2">
+                  {/* <Image 
                     src={'/call-icon.svg'}
                     alt='icon'
                     width={16}
                     height={10}
                     className='aspect-auto ml-2'
-                  />
-                  <p>+254 112 700 035</p>
+                  /> */}
+                  <p>info@jsweb.com</p>
                 </div>
               </Reveal>
               <Reveal delay={1.4}>
-                <div className="flex flex-row items-center justify-center text-sm space-x-2">
-                  <Image 
+                <div className="flex flex-row items-center justify-center text-base space-x-2">
+                  {/* <Image 
                     src={'/email-icon.svg'}
                     alt='icon'
                     width={20}
                     height={10}
                     className='aspect-auto'
-                  />
-                  <p>info@jsweb.com</p>
+                  /> */}
+                <p>Nairobi, Kenya</p>
                 </div>
               </Reveal>
             </div>

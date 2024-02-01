@@ -114,43 +114,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </Reveal>     
-        {/* -------------------homeverse website-----------------------  */}
-        <Reveal>
-          <div className='flex flex-col items-start space-y-6 w-full
-          lg:flex-row lg:items-center lg:justify-between lg:space-x-6'>
-              <Image
-                src={"/feat-2.png"}
-                alt='image'
-                width={500}
-                height={300}
-              className='aspect-auto xl:w-[560px] lg:w-[440px] w-full'
-                />
-              <div className="flex flex-col space-y-4 lg:w-2/4 w-full">
-                <h3 className='text-3xl font-poppins font-semibold'>Homeverse</h3>
-                <i className='text-2xl font-poppinslight'>Real Estate website</i>
-                <p>Make it easier for your clients to explore properties with our comprehensive real estate website. </p>
-                <Link href={'https://homeverse-seven.vercel.app/'} target='_blank'>
-                  <button className='flex flex-row space-x-2 items-center btn group'>
-                    <p>Visit Homeverse</p>
-                    <Image 
-                    src={'arrow-right-dark.svg'}
-                    alt='right arrow'
-                    width={20}
-                    height={20}
-                    className='aspect-auto stroke-black arrow'
-                    />
-                  <Image 
-                    src={'arrow-right.svg'}
-                    alt='right arrow'
-                    width={20}
-                    height={20}
-                    className='aspect-auto stroke-black arrow-alt'
-                    />
-                  </button>
-                </Link>
-              </div>
-          </div>
         </Reveal>
         {/* ----------------------grilli website------------------------ */}
         <Reveal>
@@ -188,6 +151,43 @@ export default function Home() {
               </Link>
             </div>
           </div>  
+        </Reveal>     
+        {/* -------------------homeverse website-----------------------  */}
+        <Reveal>
+          <div className='flex flex-col items-start space-y-6 w-full
+          lg:flex-row lg:items-center lg:justify-between lg:space-x-6'>
+              <Image
+                src={"/feat-2.png"}
+                alt='image'
+                width={500}
+                height={300}
+              className='aspect-auto xl:w-[560px] lg:w-[440px] w-full'
+                />
+              <div className="flex flex-col space-y-4 lg:w-2/4 w-full">
+                <h3 className='text-3xl font-poppins font-semibold'>Homeverse</h3>
+                <i className='text-2xl font-poppinslight'>Real Estate website</i>
+                <p>Make it easier for your clients to explore properties with our comprehensive real estate website. </p>
+                <Link href={'https://homeverse-seven.vercel.app/'} target='_blank'>
+                  <button className='flex flex-row space-x-2 items-center btn group'>
+                    <p>Visit Homeverse</p>
+                    <Image 
+                    src={'arrow-right-dark.svg'}
+                    alt='right arrow'
+                    width={20}
+                    height={20}
+                    className='aspect-auto stroke-black arrow'
+                    />
+                  <Image 
+                    src={'arrow-right.svg'}
+                    alt='right arrow'
+                    width={20}
+                    height={20}
+                    className='aspect-auto stroke-black arrow-alt'
+                    />
+                  </button>
+                </Link>
+              </div>
+          </div>
         </Reveal>
         {/* -----------------more work btt---------------------- */}
         <Reveal>
