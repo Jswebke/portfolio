@@ -13,8 +13,9 @@ const roboto = Roboto({subsets: ['latin'], weight:'300', variable: '--font-robot
 
 export default function RootLayout({ children }) {
   return (
+
     <html lang="en">
-      <link rel="icon" href="./logo.svg" type="image/x-icon" />
+
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
