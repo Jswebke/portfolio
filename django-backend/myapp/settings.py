@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
+import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -80,12 +82,12 @@ WSGI_APPLICATION = 'myapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
@@ -145,4 +147,12 @@ EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_HOST_USER = 'jswebke@gmail.com' #Enter your email
 EMAIL_HOST_PASSWORD = 'Jsweb@2024' #Enter your password
 DEFAULT_FROM_EMAIL = "jswebke@gmail.com" #Enter your email
+#env var
+env= environ.Env()
 
+environ.Env.read_env()
+#postgres database set up
+DATABASES = {
+    'default' : dj_database_url.parse(env('DATABASE_URL'))
+
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import './style.css'
+// import '../about-us/style.css'
 import {motion} from 'framer-motion'
 // import '../about-us/style.css'
 const Cbutton = ({text,link}) => {

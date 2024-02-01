@@ -43,7 +43,7 @@ export default function Home() {
           </Reveal>
           {/* --------------------------------------about jsweb---------------------- */}
           <Reveal delay={0.1}>
-            <p className='xl:w-1/2 lg:3/4 md:w-5/6'>J’s Web is a team of creatives and seasoned sales experts dedicated to deliver tangible business benefits to enterprises eager to establish an online presence and monetize traffic from diverse channels.</p>
+            <p className='xl:w-2/2 lg:3/4 md:w-5/6'>J’s Web is a Web Design Agency dedicated drive traffic into tangible business results.</p>
           </Reveal>
           {/* ---------------------------------contact us call to action------------------------------ */}
           <Reveal delay={0.2}>
