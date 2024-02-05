@@ -12,7 +12,7 @@ const Cbutton = ({text,link}) => {
   return (
     <>
               <div className='' variants={tapvariant}>
-              <Link href={link} className='button font-poppinslight border-white text-white hover:bg-white  hover:text-black font-bold hover:bg-opacity-100 ease-in duration-200 group ' target='_blank'
+              <Link href={link} className='button font-roboto border-white text-white hover:bg-white  hover:text-black hover:bg-opacity-100 ease-in duration-200 group ' target='_blank'
               variants={tapvariant}
               >
               {text}

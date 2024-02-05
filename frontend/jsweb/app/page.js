@@ -251,7 +251,7 @@ export default function Home() {
       <section className='flex flex-col px-16 py-20 items-start md:items-center justify-start space-y-8
       xl:px-32'>
         <Reveal>
-          <h2 className='font-poppins font-medium text-4xl tracking-wide'>Our Services</h2>
+          <h2 className='font-poppins font-medium text-6xl tracking-wide'>Our Services</h2>
         </Reveal>
         <div className='flex flex-col space-y-6'>
           <Reveal>
