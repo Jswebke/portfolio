@@ -68,7 +68,7 @@ export default function Home() {
             </Link>
           </Reveal>
         </div>
-        <div className='w-full text-white bg-red-400 z-50 flex items-end justify-end'>
+        <div className='w-full text-white z-50 flex items-end justify-end'>
           <motion.button className='flex justify-center space-y-4' onClick={() => {
             window.scrollTo({top: document.getElementById('work').offsetTop, behavior: 'smooth'})
           }}
