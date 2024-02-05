@@ -9,13 +9,14 @@ import Footer from './components/Footer'
 import NavBarPage from './components/NavBarPage'
 import Reveal from './components/Reveal'
 import Typewriter from 'typewriter-effect'
+import {motion} from 'framer-motion'
 
 export default function Home() {
   const [show, setShow] = useState(true)
 
   return show ? (
     
-    <main className="flex flex-col bg-main-bg font-roboto overflow-x-hidden">
+    <main className="flex flex-col bg-main-bg font-roboto overflow-x-hidden scroll-smooth">
       <title>Creating Real Business Value</title>
       <meta name="description" content="An web design agency that creates real business value"></meta>
       {/* ----------blob video------------- */}
@@ -67,10 +68,47 @@ export default function Home() {
             </Link>
           </Reveal>
         </div>
+        <div className='w-full text-white bg-red-400 z-50 flex items-end justify-end'>
+          <motion.button className='flex justify-center space-y-4' onClick={() => {
+            window.scrollTo({top: document.getElementById('work').offsetTop, behavior: 'smooth'})
+          }}
+            variants={{
+              initial: {
+                translateY: 0
+              },          
+              last: {
+                translateY: [0,30,0,30,0],
+                transition: {
+                  yoyo: Infinity,
+                  duration: 2,
+                  delay: 0.5
+                }
+              }
+            }}
+            transition={{}}
+            whileInView='last'
+            whileHover='last'
+          >
+            <Image
+              src={"/downArrow.svg"}
+              alt='image'
+              width={20}
+              height={8}
+              className='aspect-auto z-20	absolute w-20'
+            />
+            <Image
+              src={"/circle.svg"}
+              alt='image'
+              width={40}
+              height={8}
+              className='aspect-auto'
+            />
+          </motion.button>
+        </div>
       </section>
         {/* -------------------Featured work section-------------------------- */}
 
-      <section className='flex flex-col h-fit w-screen xl:px-32 px-16 py-12 items-center lg:space-y-24 space-y-12'>
+      <section className='flex flex-col h-fit w-screen xl:px-32 px-16 py-12 items-center lg:space-y-24 space-y-12' id='work'>
         {/* --------------------featured work h2---------------------------- */}
         <div className='flex flex-col space-y-2 items-center justify-center'>
           <Reveal>
