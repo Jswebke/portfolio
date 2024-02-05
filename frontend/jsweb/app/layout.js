@@ -1,5 +1,6 @@
 import { Inter, Lora, Quattrocento, Poppins, Roboto } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css'
 import Link from 'next/link'
 // import loading from './portfolio/loading'
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
 
       <body className={`${quattrocento.variable} ${lora.variable} ${inter.variable} ${poppins.variable} ${poppinsLight.variable} ${roboto.variable}`}>
         {children} 
-        <Analytics /></body>
+        <Analytics /> <SpeedInsights/></body>
       
     </html>
   )
