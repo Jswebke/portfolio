@@ -11,8 +11,8 @@ const Cbutton = ({text,link}) => {
   }
   return (
     <>
-              <motion.div className='' variants={tapvariant}>
-              <Link href={link} className='button text-white hover:bg-white  hover:text-black hover:bg-opacity-100 ease-in duration-200 group ' target='_blank'
+              <div className='' variants={tapvariant}>
+              <Link href={link} className='button font-roboto border-white text-white hover:bg-white  hover:text-black hover:bg-opacity-100 ease-in duration-200 group ' target='_blank'
               variants={tapvariant}
               >
               {text}
@@ -31,7 +31,7 @@ const Cbutton = ({text,link}) => {
               className='aspect-auto arrow'
               />
               </Link>
-        </motion.div>
+        </div>
     </>
   )
 }
