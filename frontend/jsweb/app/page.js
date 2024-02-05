@@ -68,43 +68,7 @@ export default function Home() {
             </Link>
           </Reveal>
         </div>
-        <div className='w-full text-white z-50 flex items-end justify-end'>
-          <motion.button className='flex justify-center space-y-4' onClick={() => {
-            window.scrollTo({top: document.getElementById('work').offsetTop, behavior: 'smooth'})
-          }}
-            variants={{
-              initial: {
-                translateY: 0
-              },          
-              last: {
-                translateY: [0,30,0,30,0],
-                transition: {
-                  yoyo: Infinity,
-                  duration: 2,
-                  delay: 0.5
-                }
-              }
-            }}
-            transition={{}}
-            whileInView='last'
-            whileHover='last'
-          >
-            <Image
-              src={"/downArrow.svg"}
-              alt='image'
-              width={20}
-              height={8}
-              className='aspect-auto z-20	absolute w-20'
-            />
-            <Image
-              src={"/circle.svg"}
-              alt='image'
-              width={40}
-              height={8}
-              className='aspect-auto'
-            />
-          </motion.button>
-        </div>
+        
       </section>
         {/* -------------------Featured work section-------------------------- */}
 
