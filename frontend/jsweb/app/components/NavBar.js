@@ -6,7 +6,7 @@ import React from 'react'
 function NavBar({show, setShow}) {
     
   return show ? (
-    <nav className='w-full py-4 absolute flex flex-row justify-between z-50 px-16 items-center text-white text-sm'>
+    <nav className='w-full py-4 absolute flex flex-row justify-between z-50 px-8 items-center text-white text-sm'>
     <Link href={'/'} className='px-2'>
         <button>
             <Image
@@ -19,7 +19,7 @@ function NavBar({show, setShow}) {
             />
         </button>
     </Link>
-    <div className="flex flex-row items-center space-x-12">
+    <div className="flex flex-row items-center space-x-16">
         <Link href={'/contact'} className='hidden md:block'>
             <button>
                 <i>LET'S TALK</i>
@@ -37,7 +37,7 @@ function NavBar({show, setShow}) {
     </div>
 </nav>
   ) : (
-    <nav className='w-full py-4 absolute flex flex-row justify-between z-50 px-16 items-center text-white text-sm'>
+    <nav className='w-full py-4 absolute flex flex-row justify-between z-50 px-12 items-center text-white text-sm'>
     <Link href={'/'} className='px-2'>
         <button>
             <Image
