@@ -11,13 +11,9 @@
     background-color: rgb(0, 0, 0);
 }
 .bg-vid{
-    /* position: absolute; */
-    height: inherit;
-    width: max-content;
     margin: auto;
     align-self: center;
     width: screen;
-    object-fit: contain;
     z-index: 10;
 
 }
@@ -39,8 +35,8 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    /* top: 30px; */
-    width:70% ;
+    top: 0;
+    width:100%;
 }
 .heroText-wrapper h1{
     position: relative;
@@ -53,8 +49,11 @@
     font-style: normal;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+<<<<<<< HEAD
     font-size: clamp(2.72rem,4.0vw,3.75rem);
 
+=======
+>>>>>>> de41ac0e3e88286886eb014b67609c31105000f3
     line-height: normal;
     
 }
@@ -71,34 +70,7 @@
 
 }
 
-/* Our company profile button */
-.CTA-btt{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    margin-top: 45px;
-    
-}
-/* .button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 0.8px solid rgb(255, 255, 255);
-    padding: 10px 14px;
-    margin-bottom: 35px;
-    color: #000;
-    background-color: none;
-    text-decoration: none;
-    text-align: center;
-    font-size: clamp(0.8rem,2vw,1rem);
-    line-height: normal;
-    display: flex;
-    height: 45px;
-    padding: 0px 22px;
-    border: 2px solid #000;
-} */
+
 .link{
     color: black;
     text-decoration: none;
@@ -210,12 +182,6 @@
     .heroText-wrapper p {
         font-size: 15px;
     }
-    .hero-vid{
-        object-fit:fill;
-        width: 100%;
-
-    }
-
     .ourStory-wrapper{
         padding: 7%;
         flex-direction: column;

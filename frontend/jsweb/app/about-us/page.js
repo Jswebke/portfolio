@@ -24,7 +24,7 @@ const aboutUs = () => {
 
     {/* --------------------hero section--------------------- */}
     <div className='hero-vid'>
-      <video src='/abtpage.mp4'  width={300}className='bg-vid'loop autoPlay muted></video>
+      <video src='/abtpage.mp4' webkit-playsinline playsinline={1} width={300}className='bg-vid'loop autoPlay muted></video>
     </div>
     <div className='hero-bg'>
       <div className='heroText-wrapper'>

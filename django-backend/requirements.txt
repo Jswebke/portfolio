@@ -1,7 +1,7 @@
 asgiref==3.7.2
 dj-database-url==2.1.0
-Django==4.2.7
-django-cors-headers==4.3.0
+Django==3.2.24
+django-cors-headers==4.1.0
 django-environ==0.11.2
 django-smtp-ssl==1.0
 djangorestframework==3.14.0
@@ -10,5 +10,5 @@ packaging==23.2
 psycopg2-binary==2.9.9
 pytz==2023.3.post1
 sqlparse==0.4.4
-typing_extensions==4.8.0
+typing_extensions==4.7.1
 tzdata==2023.3

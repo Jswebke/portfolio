@@ -20,7 +20,7 @@ export default function Home() {
       <title>Creating Real Business Value</title>
       <meta name="description" content="An web design agency that creates real business value"></meta>
       {/* ----------blob video------------- */}
-      <video src='/hero-video.mp4' loop autoPlay muted
+      <video src='/hero-video.mp4' webkit-playsinline playsinline={1} loop autoPlay muted
       className='absolute hidden md:block w-screen h-screen object-fit z-10 bg-black pl-10 ' />
       {/*----------Navbar---------*/} 
       <NavBar setShow={setShow} show={show}/>  
@@ -166,7 +166,7 @@ export default function Home() {
               />
             <div className="flex flex-col space-y-4 lg:w-2/4 w-full">
               <h3 className='text-3xl font-poppins font-semibold'>Grilli</h3>
-              <i className='text-2xl font-poppinslight'>Restuarant website</i>
+              <i className='text-2xl font-poppinslight'>Restaurant website</i>
               <p>Establish a digital home for your restaurant, where potential customers can learn all about you with just a click.</p>
               <Link href={'https://grilli-lovat.vercel.app/'} target='_blank'>
                 <button className='flex flex-row space-x-2 items-center btn group'>
