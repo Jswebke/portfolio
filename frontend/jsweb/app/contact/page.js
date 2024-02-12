@@ -20,7 +20,7 @@ function page() {
     const postData = async (data) => {
         try {
             
-            const response = axios.post('http://127.0.0.1:8000/api/contact/create/', {
+            const response = axios.post('https://django-backend-vercel.vercel.app/api/contact/create/', {
             // Your data to be sent in the request body
             CompanyName:data.companyName,
             FullName:data.fullname,
