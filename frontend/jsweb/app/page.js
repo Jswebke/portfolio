@@ -20,7 +20,7 @@ export default function Home() {
       <title>Creating Real Business Value</title>
       <meta name="description" content="An web design agency that creates real business value"></meta>
       {/* ----------blob video------------- */}
-      <video src='/hero-video.mp4' webkit-playsinline playsinline={1} loop autoPlay muted
+      <video src='/hero-video.mp4' webkit-playsinlin={1} playsinline={1} loop autoPlay muted
       className='absolute hidden md:block w-screen h-screen object-fit z-10 bg-black pl-10 ' />
       {/*----------Navbar---------*/} 
       <NavBar setShow={setShow} show={show}/>  
